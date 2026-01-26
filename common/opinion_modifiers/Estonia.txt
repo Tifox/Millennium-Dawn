@@ -38,4 +38,48 @@ opinion_modifiers = {
 	EST_euro_rejection = {
 		value = -30
 	}
+
+	EST_hybrid_threat_solidarity = {
+		value = 5
+	}
+
+	# Border Incidents
+	EST_border_provocation_victim = {
+		value = -30
+		decay = 0.5
+	}
+
+	EST_border_provocation_target = {
+		value = -15
+	}
+
+	EST_border_solidarity = {
+		value = 10
+	}
+
+	EST_airspace_violator = {
+		value = -10
+		decay = 1
+	}
+
+	# 2007 Cyber Attacks
+	EST_cyber_attack_victim = {
+		value = -50
+		decay = 1
+		min_trust = -50
+	}
+
+	EST_cyber_attack_perpetrator = {
+		value = -25
+		decay = 0.5
+	}
+
+	EST_cyber_solidarity = {
+		value = 15
+	}
+
+	# NATO Cyber Defence Centre
+	EST_cyber_defense_hub = {
+		value = 10
+	}
 }

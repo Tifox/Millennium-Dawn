@@ -16,3 +16,36 @@
  est_election.2.t: "Snap Election Called"
  est_election.2.d: "Following the collapse of the government coalition, President [EST.GetLeader] has called for early parliamentary elections. The nation must return to the polls to elect a new Riigikogu and form a stable government."
  est_election.2.a: "Prepare for the campaign."
+
+ # GPS Jamming Events
+ estonia.301.t: "GPS Jamming Detected"
+ estonia.301.d: "Our defense forces and civilian aviation authorities have detected significant GPS jamming signals originating from Russian territory. Commercial flights are experiencing navigation disruptions, and emergency services report intermittent GPS failures.\n\nThis is part of Russia's ongoing hybrid warfare campaign against the Baltic states. We must decide how to respond to this provocation."
+ estonia.301.a: "Invest in signal resilience systems."
+ estonia.301.b: "Raise this issue with our NATO allies."
+
+ # Border Incidents
+ estonia.302.t: "Narva River Buoy Incident"
+ estonia.302.d: "Russian authorities have unilaterally removed border demarcation buoys from the Narva River, which forms the border between Estonia and Russia. This provocative act challenges our territorial sovereignty and violates international agreements.\n\nThe removal of these markers, some of which have been in place for decades, appears designed to create ambiguity about the exact border location. We must respond to this provocation."
+ estonia.302.a: "Lodge a formal diplomatic protest."
+ estonia.302.b: "Seek EU and NATO condemnation."
+
+ estonia.303.t: "Russian Airspace Violation"
+ estonia.303.d: "Our air defense systems have detected a Russian military aircraft entering Estonian airspace without authorization or flight plan. NATO air policing fighters have been scrambled to intercept.\n\nSuch violations have become increasingly common and represent a pattern of Russian intimidation tactics."
+ estonia.303.a: "Summon the Russian ambassador."
+
+ # 2007 Cyber Attacks
+ estonia.300.t: "Estonia Under Cyber Attack"
+ estonia.300.d: "In the wake of our decision to relocate the Bronze Soldier memorial, Estonia is experiencing an unprecedented wave of cyber attacks. Government websites, banks, media outlets, and internet service providers are being overwhelmed by coordinated distributed denial-of-service attacks. Parliament's email system is paralyzed, online banking is disrupted, and news sites are inaccessible.\n\nThe attacks appear to originate from Russian-language sources, though official attribution remains difficult. This represents the first major state-level cyber attack in modern history, and our response will shape the future of cyber defense."
+ estonia.300.a: "We must strengthen our cyber defenses."
+ estonia.300.b: "Rally international support against this aggression."
+
+ EST_under_cyber_attack: "Under Cyber Attack"
+ EST_under_cyber_attack_desc: "Estonia is experiencing coordinated cyber attacks targeting critical infrastructure and government services."
+
+ EST_cyber_defense_pioneer: "Cyber Defense Pioneer"
+ EST_cyber_defense_pioneer_desc: "Estonia has become a world leader in cyber defense following the 2007 attacks, hosting NATO's Cyber Defence Centre of Excellence."
+
+ # NATO Cyber Defence Centre
+ estonia.304.t: "NATO Cyber Defence Centre Established"
+ estonia.304.d: "In response to the devastating cyber attacks we experienced in 2007, NATO has established the Cooperative Cyber Defence Centre of Excellence here in Tallinn. This center will serve as the alliance's premier institution for cyber defense research, training, and doctrine development.\n\nEstonia has transformed tragedy into opportunity, becoming a global leader in cyber defense. The lessons learned from our experience will help protect democracies worldwide from similar attacks."
+ estonia.304.a: "Estonia leads the way in cyber defense."
