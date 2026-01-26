@@ -193,18 +193,57 @@ set_leader_EST = {
 
 			create_country_leader = {
 				name = "Edgar Savisaar"
-				desc = EDGAR_SAVISAAR_DESC
+				desc = EST_EDGAR_SAVISAAR_DESC
 				picture = "edgar_savisaar.dds"
-				expire = "2050.1.1"
+				expire = "2022.10.20"
 				ideology = oligarchism
 				traits = {
 					neutrality_oligarchism
 					career_politician
+					popular_figurehead
 				}
 			}
 
 			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { oligarchism_leader = 1 } }
-			if = { limit = { date < 2016.1.2 } set_temp_variable = { b = 1 } } #skip if 2017
+			if = { limit = { date < 2016.11.23 } set_temp_variable = { b = 1 } }
+		}
+		if = { limit = { check_variable = { oligarchism_leader = 1 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { oligarchism_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Juri Ratas"
+				desc = EST_JURI_RATAS_DESC
+				picture = "Juri_Ratas.dds"
+				expire = "2050.1.1"
+				ideology = oligarchism
+				traits = {
+					neutrality_oligarchism
+					coalition_builder
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { oligarchism_leader = 1 } }
+			if = { limit = { date < 2021.1.26 } set_temp_variable = { b = 1 } }
+		}
+		if = { limit = { check_variable = { oligarchism_leader = 2 } NOT = { check_variable = { b = 1 } } }
+			add_to_variable = { oligarchism_leader = 1 }
+			hidden_effect = { kill_country_leader = yes }
+
+			create_country_leader = {
+				name = "Jaan Toots"
+				desc = EST_JAAN_TOOTS_DESC
+				picture = "Jaan_Toots.dds"
+				expire = "2050.1.1"
+				ideology = oligarchism
+				traits = {
+					neutrality_oligarchism
+					economist
+				}
+			}
+
+			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { oligarchism_leader = 1 } }
+			set_temp_variable = { b = 1 }
 		}
 	}
 	else_if = { limit = { has_country_flag = set_Neutral_green }
@@ -315,43 +354,35 @@ set_leader_EST = {
 			hidden_effect = { kill_country_leader = yes }
 
 			create_country_leader = {
-				name = "Villu Reiljan"
-				picture = "villu_reiljan.dds"
+				name = "Mart Helme"
+				desc = EST_MART_HELME_DESC
+				picture = "mart_helme.dds"
+				expire = "2050.1.1"
 				ideology = Nat_Populism
 				traits = {
 					nationalist_Nat_Populism
+					former_interior_minister
+					fascist_demagogue
 				}
 			}
 
 			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Nat_Populism_leader = 1 } }
-			if = { limit = { date < 2014.1.2 } set_temp_variable = { b = 1 } } #skip if 2017
+			if = { limit = { date < 2020.11.8 } set_temp_variable = { b = 1 } } # Martin Helme became EKRE chairman
 		}
 		if = { limit = { check_variable = { Nat_Populism_leader = 1 } NOT = { check_variable = { b = 1 } } }
 			add_to_variable = { Nat_Populism_leader = 1 }
 			hidden_effect = { kill_country_leader = yes }
 
 			create_country_leader = {
-				name = "Andres Herkel"
-				picture = "andres_herkel.dds"
+				name = "Martin Helme"
+				desc = EST_MARTIN_HELME_DESC
+				picture = "martin_helme.dds"
+				expire = "2050.1.1"
 				ideology = Nat_Populism
 				traits = {
 					nationalist_Nat_Populism
-				}
-			}
-
-			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { Nat_Populism_leader = 1 } }
-			if = { limit = { date < 2024.1.2 } set_temp_variable = { b = 1 } }
-		}
-		if = { limit = { check_variable = { Nat_Populism_leader = 2 } NOT = { check_variable = { b = 1 } } }
-			add_to_variable = { Nat_Populism_leader = 1 }
-			hidden_effect = { kill_country_leader = yes }
-
-			create_country_leader = {
-				name = "Märt Meesak"
-				picture = "märt_meesak.dds"
-				ideology = Nat_Populism
-				traits = {
-					nationalist_Nat_Populism
+					former_finance_minister
+					economist
 				}
 			}
 
