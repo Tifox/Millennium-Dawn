@@ -1,6 +1,18 @@
 # Estonia Development Specs
 
+> **This is the main entry point for all Estonia content development.**
+> Start here before working on any TASK.
+
 This folder contains the development specifications for expanding Estonia (EST) content in Millennium Dawn.
+
+## Quick Start
+
+1. **Pick a TASK** from the table below (choose a `Pending` one)
+2. **Read the TASK's README** in its folder for full context
+3. **Follow the Git Workflow** below to create a branch and PR
+4. **Implement the ISSUEs** within the TASK folder
+5. **Fix BugBot issues** until the PR is clean
+6. **Merge and update** this README to mark the TASK as done
 
 ## Structure
 
