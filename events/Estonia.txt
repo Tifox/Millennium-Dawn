@@ -2509,7 +2509,11 @@ country_event = {
 		add_stability = 0.05
 		add_political_power = 50
 
-		# NATO Forward Forces presence
+		# Remove eFP and upgrade to Forward Forces
+		if = {
+			limit = { has_idea = EST_nato_efp }
+			remove_ideas = EST_nato_efp
+		}
 		add_ideas = EST_nato_forward_forces
 
 		# Improved UK relations (battlegroup leader)
