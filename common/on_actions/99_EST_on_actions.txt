@@ -1,0 +1,107 @@
+# Estonia On Actions
+# Author: Clausewitz Agent
+# Estonian parliamentary elections occur every 4 years in early March
+
+on_actions = {
+	# Estonia Monthly Actions - Election Triggers
+	on_monthly_EST = {
+		effect = {
+			# 2003 Parliamentary Election - March 2, 2003
+			if = {
+				limit = {
+					date > 2003.3.1
+					date < 2003.4.1
+					NOT = { has_country_flag = EST_2003_election_held }
+					EST_can_hold_election = yes
+				}
+				set_country_flag = EST_2003_election_held
+				country_event = { id = est_election.1 days = 2 }
+			}
+
+			# 2007 Parliamentary Election - March 4, 2007
+			if = {
+				limit = {
+					date > 2007.3.1
+					date < 2007.4.1
+					NOT = { has_country_flag = EST_2007_election_held }
+					EST_can_hold_election = yes
+				}
+				set_country_flag = EST_2007_election_held
+				country_event = { id = est_election.1 days = 4 }
+			}
+
+			# 2011 Parliamentary Election - March 6, 2011
+			if = {
+				limit = {
+					date > 2011.3.1
+					date < 2011.4.1
+					NOT = { has_country_flag = EST_2011_election_held }
+					EST_can_hold_election = yes
+				}
+				set_country_flag = EST_2011_election_held
+				country_event = { id = est_election.1 days = 6 }
+			}
+
+			# 2015 Parliamentary Election - March 1, 2015
+			if = {
+				limit = {
+					date > 2015.2.28
+					date < 2015.4.1
+					NOT = { has_country_flag = EST_2015_election_held }
+					EST_can_hold_election = yes
+				}
+				set_country_flag = EST_2015_election_held
+				country_event = { id = est_election.1 days = 1 }
+			}
+
+			# 2019 Parliamentary Election - March 3, 2019
+			if = {
+				limit = {
+					date > 2019.3.1
+					date < 2019.4.1
+					NOT = { has_country_flag = EST_2019_election_held }
+					EST_can_hold_election = yes
+				}
+				set_country_flag = EST_2019_election_held
+				country_event = { id = est_election.1 days = 3 }
+			}
+
+			# 2023 Parliamentary Election - March 5, 2023
+			if = {
+				limit = {
+					date > 2023.3.1
+					date < 2023.4.1
+					NOT = { has_country_flag = EST_2023_election_held }
+					EST_can_hold_election = yes
+				}
+				set_country_flag = EST_2023_election_held
+				country_event = { id = est_election.1 days = 5 }
+			}
+
+			# 2027 Parliamentary Election - Future elections every 4 years after 2023
+			if = {
+				limit = {
+					date > 2027.3.1
+					date < 2027.4.1
+					NOT = { has_country_flag = EST_2027_election_held }
+					EST_can_hold_election = yes
+				}
+				set_country_flag = EST_2027_election_held
+				country_event = { id = est_election.1 days = 7 }
+			}
+		}
+	}
+
+	# Estonia Weekly Actions (for snap election cooldown)
+	on_weekly_EST = {
+		effect = {
+			# Clear snap election flag after 3 years (allows new snap elections)
+			if = {
+				limit = {
+					has_country_flag = { flag = EST_snap_election_called days > 1095 }
+				}
+				clr_country_flag = EST_snap_election_called
+			}
+		}
+	}
+}
