@@ -2811,7 +2811,7 @@ country_event = {
 		add_political_power = 25
 
 		# e-Residency benefits
-		add_ideas = EST_e_residency
+		add_ideas = EST_e_residency_program
 
 		ai_chance = { base = 100 }
 	}
