@@ -1,0 +1,71 @@
+# Estonia Scripted Triggers
+# Author: Clausewitz Agent
+
+# Estonia Election Eligibility Trigger
+# Checks if Estonia can hold a parliamentary election
+EST_can_hold_election = {
+	original_tag = EST
+	exists = yes
+	is_subject = no
+	has_government = democratic
+	NOT = { has_war = yes }
+	NOT = { has_country_flag = EST_snap_election_called }
+	NOT = { has_country_flag = EST_election_in_progress }
+}
+
+# Check if Estonia has a democratic government
+# Used to verify democratic coalition participation
+EST_has_democratic_government = {
+	original_tag = EST
+	OR = {
+		has_government = democratic
+		# Also check for democratic ideology subgroups
+		is_in_array = { ruling_party = 3 }  # social_democrat
+		is_in_array = { ruling_party = 4 }  # progressivism
+		is_in_array = { ruling_party = 5 }  # liberalism
+		is_in_array = { ruling_party = 6 }  # liberal_conservatism
+		is_in_array = { ruling_party = 7 }  # social_conservatism
+		is_in_array = { ruling_party = 8 }  # authoritarian_conservatism
+	}
+}
+
+# Check if EKRE (Conservative People's Party) can participate in elections
+# EKRE was formed in 2012 from the merger of Estonian Independence Party and People's Union
+EST_ekre_can_participate = {
+	OR = {
+		date > 2012.3.1
+		has_country_flag = EST_ekre_has_formed
+	}
+}
+
+# Check if Estonia has had a recent election
+# Elections are every 4 years (1460 days)
+EST_recent_election = {
+	OR = {
+		has_country_flag = { flag = EST_2003_election_held days < 1460 }
+		has_country_flag = { flag = EST_2007_election_held days < 1460 }
+		has_country_flag = { flag = EST_2011_election_held days < 1460 }
+		has_country_flag = { flag = EST_2015_election_held days < 1460 }
+		has_country_flag = { flag = EST_2019_election_held days < 1460 }
+		has_country_flag = { flag = EST_2023_election_held days < 1460 }
+		has_country_flag = { flag = EST_2027_election_held days < 1460 }
+	}
+}
+
+# Trigger for government instability (can cause snap elections)
+# Checks for low stability or coalition problems
+EST_government_unstable = {
+	original_tag = EST
+	OR = {
+		has_stability < 0.3
+		check_variable = { government_coalition_strength < 40 }
+		AND = {
+			has_country_flag = EST_election_reform_victory
+			NOT = { is_in_array = { ruling_party = 5 } }  # Reform Party (liberalism)
+		}
+		AND = {
+			has_country_flag = EST_election_centre_victory
+			NOT = { is_in_array = { ruling_party = 3 } }  # Centre Party (social_democrat)
+		}
+	}
+}
