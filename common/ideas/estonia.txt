@@ -889,5 +889,31 @@ local_resources_chromium_factor = 0.10
 				political_power_gain = 0.05
 			}
 		}
+
+		# 2007 Cyber Attacks
+		EST_under_cyber_attack = {
+			picture = generic_cyber_security
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				stability_factor = -0.05
+				political_power_factor = -0.10
+				production_factory_efficiency_gain_factor = -0.05
+			}
+		}
+
+		EST_cyber_defense_pioneer = {
+			picture = generic_cyber_security
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				stability_factor = 0.03
+				research_speed_factor = 0.02
+			}
+		}
 	}
 }
