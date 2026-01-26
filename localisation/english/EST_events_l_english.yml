@@ -49,3 +49,14 @@
  estonia.304.t: "NATO Cyber Defence Centre Established"
  estonia.304.d: "In response to the devastating cyber attacks we experienced in 2007, NATO has established the Cooperative Cyber Defence Centre of Excellence here in Tallinn. This center will serve as the alliance's premier institution for cyber defense research, training, and doctrine development.\n\nEstonia has transformed tragedy into opportunity, becoming a global leader in cyber defense. The lessons learned from our experience will help protect democracies worldwide from similar attacks."
  estonia.304.a: "Estonia leads the way in cyber defense."
+
+ # Opinion Modifiers
+ EST_cyber_attack_victim: "Victim of Russian Cyber Attack"
+ EST_cyber_attack_perpetrator: "Cyber Attack Perpetrator"
+ EST_cyber_solidarity: "Solidarity Against Cyber Attacks"
+ EST_cyber_defense_hub: "Hosts NATO Cyber Defence Centre"
+ EST_hybrid_threat_solidarity: "Solidarity Against Hybrid Threats"
+ EST_border_provocation_victim: "Victim of Border Provocation"
+ EST_border_provocation_target: "Border Provocation Target"
+ EST_border_solidarity: "Solidarity Against Border Provocations"
+ EST_airspace_violator: "Airspace Violator"

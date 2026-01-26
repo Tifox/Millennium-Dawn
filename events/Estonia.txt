@@ -1837,11 +1837,10 @@ country_event = {
 		tag = EST
 		date > 2024.1.1
 		NOT = { has_country_flag = EST_gps_jamming_recent }
-		SOV = {
-			OR = {
-				has_war = yes
-				has_country_flag = russia_ukraine_war
-			}
+		SOV = { exists = yes }
+		OR = {
+			SOV = { has_war = yes }
+			has_global_flag = russia_ukraine_war
 		}
 	}
 
