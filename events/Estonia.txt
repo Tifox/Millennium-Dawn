@@ -1691,6 +1691,7 @@ country_event = {
 		date > 2007.4.27
 		NOT = { has_country_flag = EST_2007_cyber_attacks }
 		NOT = { has_global_flag = EST_cyber_attacks_happened }
+		SOV = { exists = yes }
 	}
 
 	mean_time_to_happen = {
@@ -1903,6 +1904,7 @@ country_event = {
 		date > 2024.5.1
 		NOT = { has_country_flag = EST_narva_buoy_incident }
 		NOT = { has_global_flag = EST_narva_buoy_happened }
+		SOV = { exists = yes }
 	}
 
 	mean_time_to_happen = {
