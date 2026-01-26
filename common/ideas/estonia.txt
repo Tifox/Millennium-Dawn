@@ -44,9 +44,14 @@ ideas = {
 			name = EST_e_residency_program_idea
 			picture = GENERIC_idea_public_works
 
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+
 			modifier = {
 				production_speed_buildings_factor = 0.05
 				research_speed_factor = 0.05
+				trade_opinion_factor = 0.10
+				political_power_gain = 0.03
 			}
 		}
 
@@ -1044,6 +1049,35 @@ local_resources_chromium_factor = 0.10
 			modifier = {
 				research_speed_factor = 0.05
 				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+
+		# Digital Society (TASK-009)
+
+		# Tech Innovation Hub
+		EST_tech_hub = {
+			picture = generic_research_bonus
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				research_speed_factor = 0.03
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
+
+		# 100% Digital Government
+		EST_digital_government = {
+			picture = generic_pp_unity_bonus
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				political_power_gain = 0.10
+				stability_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.03
 			}
 		}
 	}

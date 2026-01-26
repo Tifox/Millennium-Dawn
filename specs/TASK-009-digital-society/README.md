@@ -1,6 +1,6 @@
 # TASK-009: Digital Society
 
-**Status: PENDING**
+**Status: DONE**
 
 ## Overview
 
@@ -24,9 +24,9 @@ Estonia lacks flavor events for its globally-recognized digital achievements. Th
 
 | File | Description | Status |
 |------|-------------|--------|
-| `events/Estonia.txt` | Add digital society events | Pending |
-| `common/ideas/estonia.txt` | Add digital society modifiers | Pending |
-| `localisation/english/EST_events_l_english.yml` | Add event localization | Pending |
+| `events/Estonia.txt` | Add digital society events | Done |
+| `common/ideas/estonia.txt` | Add digital society modifiers | Done |
+| `localisation/english/EST_events_l_english.yml` | Add event localization | Done |
 
 ## Implementation Strategy
 

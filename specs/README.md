@@ -45,7 +45,7 @@ specs/
 | TASK-006 | Cyber & Hybrid Threats | 2007 cyber attacks, GPS jamming, border incidents | High | ✅ Done |
 | TASK-007 | EKRE Political Events | EKRE rise, nationalist rhetoric, coalition dynamics | Medium | ✅ Done |
 | TASK-008 | Ukraine Response | Estonia's response to 2022 Russian invasion | High | ✅ Done |
-| TASK-009 | Digital Society | E-residency, e-governance, digital initiatives | Low | Pending |
+| TASK-009 | Digital Society | E-residency, e-governance, digital initiatives | Low | ✅ Done |
 | TASK-010 | Defense Modernization | NATO integration, military spending, conscription | Medium | ✅ Done |
 
 ## Workflow
@@ -203,6 +203,10 @@ Custom GFX assets to be created after all TASKs are implemented. Currently using
 | Military training / conscription | TASK-010 | `GFX_report_event_military_training` | Pending |
 | Air defense systems (IRIS-T/NASAMS) | TASK-010 | `GFX_report_event_anti_air` | Pending |
 | Defense innovation / tech | TASK-010 | `GFX_military_technology` | Pending |
+| e-Residency / digital ID | TASK-009 | `GFX_computer` | Pending |
+| Tech unicorns / startups | TASK-009 | `GFX_computer` | Pending |
+| Digital voting | TASK-009 | `GFX_computer` | Pending |
+| Digital government services | TASK-009 | `GFX_computer` | Pending |
 
 ### Idea Icons
 
@@ -215,6 +219,9 @@ Custom GFX assets to be created after all TASKs are implemented. Currently using
 | Conscription reform | TASK-010 | `generic_manpower_bonus` | Pending |
 | Air defense network | TASK-010 | `generic_air_bonus` | Pending |
 | Defense innovation | TASK-010 | `generic_research_bonus` | Pending |
+| e-Residency program | TASK-009 | `generic_pp_unity_bonus` | Pending |
+| Tech hub | TASK-009 | `generic_research_bonus` | Pending |
+| Digital government | TASK-009 | `generic_pp_unity_bonus` | Pending |
 
 ### Notes
 - Custom GFX can be added later without code changes - just update the `picture = ` references

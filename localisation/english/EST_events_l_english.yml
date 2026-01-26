@@ -178,3 +178,31 @@
 
  # Defense Modernization Opinion Modifiers
  EST_efp_partner: "eFP Partner"
+
+ # Digital Society Events (TASK-009)
+ estonia.600.t: "e-Residency Program Launches"
+ estonia.600.d: "Estonia has become the first country in the world to offer e-Residency - a government-issued digital identity available to anyone in the world. This groundbreaking program allows entrepreneurs and digital nomads to establish and manage EU-based businesses without physically residing in Estonia.\n\nWith our digital ID card, e-residents can sign documents, access banking services, and register companies from anywhere on Earth. This positions Estonia as the world's first 'digital nation' and opens new possibilities for our economy."
+ estonia.600.a: "Welcome to the future of digital citizenship."
+
+ estonia.601.t: "100,000 e-Residents Milestone"
+ estonia.601.d: "Estonia's e-Residency program has reached a remarkable milestone: 100,000 registered e-residents from over 170 countries. These digital entrepreneurs have chosen Estonia as their gateway to the European market, registering thousands of companies and contributing to our economy.\n\nThis achievement validates our vision of a borderless digital society. Estonia, with a population of just 1.3 million, has created a global community of digital citizens many times larger."
+ estonia.601.a: "Estonia leads the digital revolution."
+
+ estonia.602.t: "Estonia: Land of Tech Unicorns"
+ estonia.602.d: "Estonia has achieved something remarkable for a nation of 1.3 million people: we have produced more tech 'unicorns' per capita than any other country in Europe. Companies like Skype, Wise, Bolt, and Pipedrive have all achieved valuations exceeding $1 billion.\n\nOur investment in digital infrastructure, tech education, and startup-friendly policies has paid off spectacularly. Estonia is now recognized globally as a tech innovation hub, punching far above its weight in the global technology economy."
+ estonia.602.a: "Estonian innovation leads the world."
+
+ estonia.603.t: "Internet Voting in National Elections"
+ estonia.603.d: "Estonia has made history by becoming the first nation to use internet voting in national parliamentary elections. Building on our successful pilot in 2005 local elections, Estonian citizens can now cast their votes from anywhere in the world using their digital ID cards.\n\nWhile some have raised security concerns, our robust digital identity infrastructure provides strong authentication. This innovation makes voting more accessible and convenient, particularly for Estonians living abroad.\n\nEstonia continues to lead the world in digital governance."
+ estonia.603.a: "Democracy goes digital."
+
+ estonia.604.t: "100% Digital Government Achieved"
+ estonia.604.d: "Estonia has achieved a remarkable milestone: 100% of government services are now available digitally. From registering a business to filing taxes to even obtaining a divorce, Estonian citizens can access every government service online.\n\nBuilt on our X-Road data exchange backbone, this digital infrastructure saves over 1,400 work-years annually in administrative time. Citizens no longer need to visit government offices or wait in queues for most services.\n\nEstonia has proven that a fully digital government is not just possible, but practical and efficient."
+ estonia.604.a: "The paper era ends."
+
+ # Digital Society Ideas
+ EST_tech_hub: "Tech Innovation Hub"
+ EST_tech_hub_desc: "Estonia's tech sector has produced multiple billion-dollar companies, attracting talent and investment while boosting research capabilities."
+
+ EST_digital_government: "100% Digital Government"
+ EST_digital_government_desc: "Estonia has achieved complete digitalization of government services, dramatically improving administrative efficiency and citizen convenience."

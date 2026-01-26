@@ -2771,3 +2771,210 @@ country_event = {
 		ai_chance = { base = 100 }
 	}
 }
+
+###################################
+# Digital Society Events (TASK-009)
+###################################
+
+# 2014 - e-Residency Program Launches
+country_event = {
+	id = estonia.600
+	title = estonia.600.t
+	desc = estonia.600.d
+	picture = GFX_computer
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		date > 2014.12.1
+		NOT = { has_country_flag = EST_e_residency_launched }
+		NOT = { has_global_flag = EST_e_residency_happened }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = EST_e_residency_happened
+		}
+	}
+
+	option = {
+		name = estonia.600.a
+		log = "[GetDateText]: [This.GetName]: event estonia.600.a executed"
+
+		set_country_flag = EST_e_residency_launched
+
+		add_political_power = 25
+
+		# e-Residency benefits
+		add_ideas = EST_e_residency_program
+
+		ai_chance = { base = 100 }
+	}
+}
+
+# 2023 - 100,000 e-Residents Achieved
+country_event = {
+	id = estonia.601
+	title = estonia.601.t
+	desc = estonia.601.d
+	picture = GFX_computer
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		date > 2023.6.1
+		has_country_flag = EST_e_residency_launched
+		NOT = { has_country_flag = EST_100k_e_residents }
+		NOT = { has_global_flag = EST_100k_happened }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = EST_100k_happened
+		}
+	}
+
+	option = {
+		name = estonia.601.a
+		log = "[GetDateText]: [This.GetName]: event estonia.601.a executed"
+
+		set_country_flag = EST_100k_e_residents
+
+		add_political_power = 15
+		add_stability = 0.01
+
+		ai_chance = { base = 100 }
+	}
+}
+
+# 2020+ - Estonian Tech Unicorns
+country_event = {
+	id = estonia.602
+	title = estonia.602.t
+	desc = estonia.602.d
+	picture = GFX_computer
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		date > 2020.1.1
+		NOT = { has_country_flag = EST_tech_unicorns }
+		NOT = { has_global_flag = EST_unicorns_happened }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = EST_unicorns_happened
+		}
+	}
+
+	option = {
+		name = estonia.602.a
+		log = "[GetDateText]: [This.GetName]: event estonia.602.a executed"
+
+		set_country_flag = EST_tech_unicorns
+
+		add_political_power = 35
+
+		# Tech hub status
+		add_ideas = EST_tech_hub
+
+		ai_chance = { base = 100 }
+	}
+}
+
+# 2007 - i-Voting in National Elections
+country_event = {
+	id = estonia.603
+	title = estonia.603.t
+	desc = estonia.603.d
+	picture = GFX_computer
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		date > 2007.3.4
+		NOT = { has_country_flag = EST_i_voting }
+		NOT = { has_global_flag = EST_i_voting_happened }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = EST_i_voting_happened
+		}
+	}
+
+	option = {
+		name = estonia.603.a
+		log = "[GetDateText]: [This.GetName]: event estonia.603.a executed"
+
+		set_country_flag = EST_i_voting
+
+		add_political_power = 20
+		add_stability = 0.02
+
+		ai_chance = { base = 100 }
+	}
+}
+
+# 2024 - 100% Digital Government Achieved
+country_event = {
+	id = estonia.604
+	title = estonia.604.t
+	desc = estonia.604.d
+	picture = GFX_computer
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		date > 2024.12.1
+		NOT = { has_country_flag = EST_fully_digital }
+		NOT = { has_global_flag = EST_fully_digital_happened }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = EST_fully_digital_happened
+		}
+	}
+
+	option = {
+		name = estonia.604.a
+		log = "[GetDateText]: [This.GetName]: event estonia.604.a executed"
+
+		set_country_flag = EST_fully_digital
+
+		add_political_power = 50
+		add_stability = 0.03
+
+		# Full digital government benefits
+		add_ideas = EST_digital_government
+
+		ai_chance = { base = 100 }
+	}
+}
