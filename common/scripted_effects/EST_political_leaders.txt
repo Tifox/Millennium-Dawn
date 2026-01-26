@@ -48,7 +48,7 @@ set_leader_EST = {
 			}
 
 			if = { limit = { has_country_flag = do_not_retire } subtract_from_variable = { liberalism_leader = 1 } }
-			set_temp_variable = { b = 1 }
+			if = { limit = { date < 2024.7.23 } set_temp_variable = { b = 1 } } # Kaja Kallas resigned July 23, 2024
 		}
 		if = { limit = { check_variable = { liberalism_leader = 3 } NOT = { check_variable = { b = 1 } } }
 			add_to_variable = { liberalism_leader = 1 }
@@ -56,6 +56,7 @@ set_leader_EST = {
 
 			create_country_leader = {
 				name = "Kristen Michal"
+				desc = "EST_KRISTEN_MICHAL_DESC"
 				picture = "kristen_michal.dds"
 				ideology = liberalism
 				traits = {
