@@ -1722,10 +1722,10 @@ country_event = {
 
 		# Worsen relations with Russia
 		SOV = {
-			add_opinion_modifier = { target = EST modifier = EST_cyber_attack_perpetrator }
+			add_opinion_modifier = { target = EST modifier = EST_cyber_attack_victim }
 		}
 		EST = {
-			add_opinion_modifier = { target = SOV modifier = EST_cyber_attack_victim }
+			add_opinion_modifier = { target = SOV modifier = EST_cyber_attack_perpetrator }
 		}
 
 		ai_chance = { base = 70 }
@@ -1748,10 +1748,10 @@ country_event = {
 		}
 
 		SOV = {
-			add_opinion_modifier = { target = EST modifier = EST_cyber_attack_perpetrator }
+			add_opinion_modifier = { target = EST modifier = EST_cyber_attack_victim }
 		}
 		EST = {
-			add_opinion_modifier = { target = SOV modifier = EST_cyber_attack_victim }
+			add_opinion_modifier = { target = SOV modifier = EST_cyber_attack_perpetrator }
 		}
 
 		# Better relations with NATO allies
@@ -1927,10 +1927,10 @@ country_event = {
 		add_political_power = -15
 
 		SOV = {
-			add_opinion_modifier = { target = EST modifier = EST_border_provocation_target }
+			add_opinion_modifier = { target = EST modifier = EST_border_provocation_victim }
 		}
 		EST = {
-			add_opinion_modifier = { target = SOV modifier = EST_border_provocation_victim }
+			add_opinion_modifier = { target = SOV modifier = EST_border_provocation_target }
 		}
 
 		ai_chance = { base = 80 }
@@ -1946,10 +1946,10 @@ country_event = {
 		add_stability = -0.02
 
 		SOV = {
-			add_opinion_modifier = { target = EST modifier = EST_border_provocation_target }
+			add_opinion_modifier = { target = EST modifier = EST_border_provocation_victim }
 		}
 		EST = {
-			add_opinion_modifier = { target = SOV modifier = EST_border_provocation_victim }
+			add_opinion_modifier = { target = SOV modifier = EST_border_provocation_target }
 		}
 
 		every_country = {
