@@ -4,3 +4,18 @@ EST_baltictram_category = {
 	allowed = { original_tag = EST }
 	priority = 200
 }
+
+# Ukraine Response Defense Spending (TASK-008)
+EST_defense_spending_category = {
+	icon = generic_military
+
+	allowed = {
+		original_tag = EST
+	}
+
+	visible = {
+		has_country_flag = EST_ukraine_response
+	}
+
+	priority = 100
+}

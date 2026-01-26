@@ -82,3 +82,61 @@
  EST_ekre_in_government_desc: "The far-right Conservative People's Party is part of the governing coalition, leading to domestic controversy and strained relations with European partners."
 
  EST_far_right_government: "Far-Right Coalition Partner"
+
+ # Ukraine Response Events (TASK-008)
+ estonia.500.t: "Russia Invades Ukraine"
+ estonia.500.d: "The unthinkable has happened. Russian forces have launched a full-scale invasion of Ukraine, attacking from multiple directions. Cities are being bombarded, and Ukrainian forces are engaged in desperate defense.\n\nAs a nation that knows firsthand the threat of Russian aggression, Estonia must respond. Our history under Soviet occupation gives us unique moral clarity on this issue. The question is how strongly we commit to Ukraine's defense.\n\nPrime Minister Kallas has already called for the strongest possible response, including Russia's removal from SWIFT and maximum military aid to Ukraine."
+ estonia.500.a: "Stand with Ukraine - whatever it takes."
+ estonia.500.b: "Condemn the invasion but measure our response."
+
+ estonia.501.t: "Ukrainian Refugees Seek Shelter"
+ estonia.501.d: "As Russian forces continue their assault on Ukraine, tens of thousands of Ukrainians are fleeing the violence. Many are arriving in Estonia, seeking safety and temporary shelter.\n\nOur small nation faces a decision about how generously to welcome these refugees. With our population of only 1.3 million, even modest refugee numbers represent a significant demographic impact. However, our own history of occupation gives us deep empathy for their plight.\n\nThe government is preparing emergency measures for housing, work permits, and integration assistance."
+ estonia.501.a: "Open our doors wide - they are our brothers and sisters."
+ estonia.501.b: "Accept refugees within our capacity."
+
+ estonia.502.t: "Estonia Leads Sanctions Push"
+ estonia.502.d: "As the European Union debates its response to Russia's invasion, Estonia has emerged as one of the loudest voices calling for maximum sanctions. Prime Minister Kaja Kallas has been tireless in her advocacy, calling for Russia's removal from SWIFT, energy embargoes, and comprehensive economic isolation.\n\n'This is not a time for half-measures,' Kallas declared. 'Russia must pay the full price for its aggression.'\n\nHer stance has earned respect from Baltic neighbors and Eastern European allies, while Western European countries are increasingly persuaded by her arguments. However, this vocal opposition has made Estonia a particular target of Russian hostility."
+ estonia.502.a: "Lead the charge for maximum sanctions."
+ estonia.502.b: "Support sanctions without seeking the spotlight."
+
+ estonia.503.t: "NATO Upgrades Baltic Defense"
+ estonia.503.d: "In response to Russia's invasion of Ukraine, NATO has announced a major upgrade to its presence in the Baltic states. The Enhanced Forward Presence battlegroups will be upgraded to brigade-capable Forward Land Forces, representing a fundamental shift in the alliance's eastern defense posture.\n\nThe UK-led battlegroup in Estonia will be reinforced and prepared for rapid expansion to brigade strength if needed. This represents NATO's strongest commitment yet to Baltic defense.\n\nAdditional troops, equipment, and pre-positioned supplies will enhance our defensive capabilities significantly."
+ estonia.503.a: "NATO's commitment to our defense is ironclad."
+
+ # Ukraine Response Opinion Modifiers
+ EST_ukraine_defender: "Defender of Ukraine"
+ EST_supports_ukraine: "Supports Ukraine"
+ EST_ukraine_supporter: "Supports Ukraine"
+ EST_hostile_stance: "Hostile Stance"
+ EST_moderate_stance: "Moderate Stance"
+ EST_frontline_solidarity: "Frontline Solidarity"
+ EST_refugee_sanctuary: "Refugee Sanctuary"
+ EST_refugee_support: "Refugee Support"
+ EST_sanctions_leadership: "Sanctions Leadership"
+ EST_sanctions_advocate: "Sanctions Advocate"
+ EST_battlegroup_host: "Battlegroup Host"
+ EST_forward_defense_partner: "Forward Defense Partner"
+
+ # Defense Spending Ideas
+ EST_defense_spending_3: "Enhanced Defense Budget (3%)"
+ EST_defense_spending_3_desc: "Estonia has increased defense spending to 3% of GDP, enabling improved military readiness and faster training."
+ EST_defense_spending_4: "Major Defense Investment (4%)"
+ EST_defense_spending_4_desc: "Estonia's 4% GDP defense spending enables significant military modernization and enhanced offensive capabilities."
+ EST_defense_spending_5: "Maximum Defense Posture (5%)"
+ EST_defense_spending_5_desc: "At 5% of GDP, Estonia has the highest defense spending in NATO, enabling rapid military expansion and full-spectrum capability enhancement."
+
+ # NATO Forward Forces
+ EST_nato_forward_forces: "NATO Forward Land Forces"
+ EST_nato_forward_forces_desc: "NATO has upgraded its Baltic presence from Enhanced Forward Presence to Forward Land Forces, with brigade-capable forces ready to defend Estonian territory."
+
+ # Decision Category
+ EST_defense_spending_category: "Defense Spending"
+ EST_defense_spending_category_desc: "Decisions related to Estonia's defense budget and military modernization in response to the Russian threat."
+
+ # Defense Spending Decisions
+ EST_increase_defense_spending_3: "Increase Defense Spending to 3%"
+ EST_increase_defense_spending_3_desc: "In response to the Russian threat, we will increase defense spending to 3% of GDP, exceeding NATO's 2% guideline."
+ EST_increase_defense_spending_4: "Increase Defense Spending to 4%"
+ EST_increase_defense_spending_4_desc: "We will further increase defense spending to 4% of GDP, making Estonia one of the highest defense spenders in NATO."
+ EST_increase_defense_spending_5: "Increase Defense Spending to 5%"
+ EST_increase_defense_spending_5_desc: "Estonia will become the NATO leader in defense spending at 5% of GDP, reflecting the existential threat we face."

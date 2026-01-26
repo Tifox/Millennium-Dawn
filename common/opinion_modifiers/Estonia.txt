@@ -88,4 +88,53 @@ opinion_modifiers = {
 		value = -20
 		decay = 0.5
 	}
+
+	# Ukraine Response (TASK-008)
+	EST_ukraine_defender = {
+		value = 100
+	}
+
+	EST_supports_ukraine = {
+		value = 75
+	}
+
+	EST_ukraine_supporter = {
+		value = 50
+	}
+
+	EST_hostile_stance = {
+		value = -75
+	}
+
+	EST_moderate_stance = {
+		value = -40
+	}
+
+	EST_frontline_solidarity = {
+		value = 25
+	}
+
+	EST_refugee_sanctuary = {
+		value = 50
+	}
+
+	EST_refugee_support = {
+		value = 25
+	}
+
+	EST_sanctions_leadership = {
+		value = 20
+	}
+
+	EST_sanctions_advocate = {
+		value = -30
+	}
+
+	EST_battlegroup_host = {
+		value = 30
+	}
+
+	EST_forward_defense_partner = {
+		value = 15
+	}
 }

@@ -1,0 +1,91 @@
+# Author(s): Clausewitz Agent
+# Estonia Decisions - Ukraine Response (TASK-008)
+
+EST_defense_spending_category = {
+
+	EST_increase_defense_spending_3 = {
+		icon = generic_military
+
+		available = {
+			has_country_flag = EST_ukraine_response
+			NOT = { has_idea = EST_defense_spending_3 }
+			NOT = { has_idea = EST_defense_spending_4 }
+			NOT = { has_idea = EST_defense_spending_5 }
+		}
+
+		visible = {
+			has_country_flag = EST_ukraine_response
+		}
+
+		cost = 100
+		fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [This.GetName]: decision EST_increase_defense_spending_3 executed"
+			add_ideas = EST_defense_spending_3
+			set_country_flag = EST_defense_3_percent
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	EST_increase_defense_spending_4 = {
+		icon = generic_military
+
+		available = {
+			has_country_flag = EST_defense_3_percent
+			has_idea = EST_defense_spending_3
+			NOT = { has_idea = EST_defense_spending_4 }
+			date > 2023.1.1
+		}
+
+		visible = {
+			has_country_flag = EST_defense_3_percent
+		}
+
+		cost = 150
+		fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [This.GetName]: decision EST_increase_defense_spending_4 executed"
+			remove_ideas = EST_defense_spending_3
+			add_ideas = EST_defense_spending_4
+			set_country_flag = EST_defense_4_percent
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+
+	EST_increase_defense_spending_5 = {
+		icon = generic_military
+
+		available = {
+			has_country_flag = EST_defense_4_percent
+			has_idea = EST_defense_spending_4
+			NOT = { has_idea = EST_defense_spending_5 }
+			date > 2024.1.1
+		}
+
+		visible = {
+			has_country_flag = EST_defense_4_percent
+		}
+
+		cost = 200
+		fire_only_once = yes
+
+		complete_effect = {
+			log = "[GetDateText]: [This.GetName]: decision EST_increase_defense_spending_5 executed"
+			remove_ideas = EST_defense_spending_4
+			add_ideas = EST_defense_spending_5
+			set_country_flag = EST_defense_5_percent
+		}
+
+		ai_will_do = {
+			factor = 100
+		}
+	}
+}
