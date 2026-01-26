@@ -14,11 +14,11 @@ EKRE was formed on March 24, 2012, through the merger of the Estonian National M
 - **Initial Platform:** Anti-immigration, EU-skeptic, traditional values
 
 ## Requirements
-- [ ] Create country event for EKRE formation
-- [ ] Trigger after March 24, 2012
-- [ ] Fire only once
-- [ ] Boost nationalist party popularity
-- [ ] Add localization
+- [x] Create country event for EKRE formation (ALREADY EXISTS: estonia.115)
+- [x] Trigger after March 24, 2012 (triggered via 00_yearly_effects.txt for 2012)
+- [x] Fire only once
+- [x] Boost nationalist party popularity
+- [x] Add localization (exists in MD_focus_EST_l_english.yml)
 
 ## Files to Modify
 | File | Action | Description |
@@ -84,10 +84,12 @@ country_event = {
 ```
 
 ## Acceptance Criteria
-- [ ] Event fires after March 24, 2012
-- [ ] Event fires only once
-- [ ] Nat_Populism popularity increases slightly
-- [ ] Localization displays correctly
+- [x] Event fires after March 24, 2012
+- [x] Event fires only once
+- [x] Nat_Populism popularity increases slightly
+- [x] Localization displays correctly
+
+> **NOTE:** This issue was already implemented as event estonia.115, triggered via `common/scripted_effects/00_yearly_effects.txt`. The event sets the `EST_ekre_has_formed` flag which subsequent events depend on.
 
 ## Dependencies
 - Depends on: None

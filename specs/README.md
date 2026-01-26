@@ -43,7 +43,7 @@ specs/
 | TASK-004 | Historical Events | Expand historical flavor events (EU, NATO, Euro, etc.) | Medium | ✅ Done |
 | TASK-005 | Current Leadership | Add Kristen Michal as current PM (2024) | High | ✅ Done |
 | TASK-006 | Cyber & Hybrid Threats | 2007 cyber attacks, GPS jamming, border incidents | High | ✅ Done |
-| TASK-007 | EKRE Political Events | EKRE rise, nationalist rhetoric, coalition dynamics | Medium | Pending |
+| TASK-007 | EKRE Political Events | EKRE rise, nationalist rhetoric, coalition dynamics | Medium | ✅ Done |
 | TASK-008 | Ukraine Response | Estonia's response to 2022 Russian invasion | High | Pending |
 | TASK-009 | Digital Society | E-residency, e-governance, digital initiatives | Low | Pending |
 | TASK-010 | Defense Modernization | NATO integration, military spending, conscription | Medium | Pending |

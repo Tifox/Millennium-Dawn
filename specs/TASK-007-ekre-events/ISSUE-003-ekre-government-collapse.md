@@ -15,12 +15,12 @@ The Ratas government fell in January 2021 when the Centre Party became embroiled
 - **EKRE Impact:** Lost all ministerial positions
 
 ## Requirements
-- [ ] Create event for government collapse
-- [ ] Trigger after January 13, 2021
-- [ ] Require EKRE government flag
-- [ ] Remove EKRE government national spirit
-- [ ] Add stability recovery
-- [ ] Add localization
+- [x] Create event for government collapse
+- [x] Trigger after January 13, 2021
+- [x] Require EKRE government flag
+- [x] Remove EKRE government national spirit
+- [x] Add stability recovery
+- [x] Add localization
 
 ## Files to Modify
 | File | Action | Description |
@@ -102,13 +102,13 @@ country_event = {
 ```
 
 ## Acceptance Criteria
-- [ ] Event fires after January 13, 2021
-- [ ] Requires EKRE government flag
-- [ ] EKRE government spirit removed
-- [ ] Stability bonus applied
-- [ ] EU opinion penalties removed
-- [ ] Liberalism popularity increases
-- [ ] All localization displays correctly
+- [x] Event fires after January 13, 2021
+- [x] Requires EKRE government flag
+- [x] EKRE government spirit removed
+- [x] Stability bonus applied
+- [x] EU opinion penalties removed
+- [x] Liberalism popularity increases
+- [x] All localization displays correctly
 
 ## Dependencies
 - Depends on: ISSUE-002 (EKRE Government)

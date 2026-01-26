@@ -2016,3 +2016,224 @@ country_event = {
 		ai_chance = { base = 100 }
 	}
 }
+
+###################################
+# EKRE Political Events
+###################################
+
+# 2019 - EKRE Enters Government
+country_event = {
+	id = estonia.401
+	title = estonia.401.t
+	desc = estonia.401.d
+	picture = GFX_report_event_generic_parliament
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		date > 2019.4.29
+		has_country_flag = EST_ekre_has_formed
+		NOT = { has_country_flag = EST_ekre_government }
+		NOT = { has_global_flag = EST_ekre_government_happened }
+	}
+
+	mean_time_to_happen = {
+		days = 3
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = EST_ekre_government_happened
+		}
+	}
+
+	option = {
+		name = estonia.401.a
+		log = "[GetDateText]: [This.GetName]: event estonia.401.a executed"
+
+		set_country_flag = EST_ekre_government
+
+		# Controversy causes instability
+		add_stability = -0.05
+		add_political_power = -25
+
+		# EKRE in government effects
+		add_ideas = EST_ekre_in_government
+
+		# EU relations worsen
+		every_country = {
+			limit = {
+				OR = {
+					tag = GER
+					tag = FRA
+					tag = BEL
+					tag = HOL
+					tag = SWE
+				}
+			}
+			add_opinion_modifier = { target = EST modifier = EST_far_right_government }
+		}
+
+		# Boost nationalist support
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.05
+		}
+		recalculate_party = yes
+
+		ai_chance = { base = 100 }
+	}
+}
+
+# 2021 - EKRE Government Collapse
+country_event = {
+	id = estonia.402
+	title = estonia.402.t
+	desc = estonia.402.d
+	picture = GFX_report_event_generic_parliament
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		date > 2021.1.13
+		has_country_flag = EST_ekre_government
+		NOT = { has_country_flag = EST_ekre_government_collapsed }
+		NOT = { has_global_flag = EST_ekre_collapse_happened }
+	}
+
+	mean_time_to_happen = {
+		days = 3
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = EST_ekre_collapse_happened
+		}
+	}
+
+	option = {
+		name = estonia.402.a
+		log = "[GetDateText]: [This.GetName]: event estonia.402.a executed"
+
+		set_country_flag = EST_ekre_government_collapsed
+
+		# Remove EKRE government effects
+		if = {
+			limit = { has_idea = EST_ekre_in_government }
+			remove_ideas = EST_ekre_in_government
+		}
+
+		# Stability recovery from end of controversy
+		add_stability = 0.05
+		add_political_power = -50
+
+		# EU relations begin to recover
+		every_country = {
+			limit = {
+				has_opinion_modifier = { target = EST modifier = EST_far_right_government }
+			}
+			remove_opinion_modifier = { target = EST modifier = EST_far_right_government }
+		}
+
+		# Liberalism returns to power historically
+		add_popularity = {
+			ideology = democratic
+			popularity = 0.03
+		}
+		recalculate_party = yes
+
+		ai_chance = { base = 100 }
+	}
+}
+
+# 2019 - EKRE Electoral Breakthrough
+country_event = {
+	id = estonia.403
+	title = estonia.403.t
+	desc = estonia.403.d
+	picture = GFX_report_event_generic_rally
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		date > 2019.3.3
+		has_country_flag = EST_ekre_has_formed
+		NOT = { has_country_flag = EST_ekre_2019_election }
+		NOT = { has_global_flag = EST_ekre_2019_happened }
+	}
+
+	mean_time_to_happen = {
+		days = 3
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = EST_ekre_2019_happened
+		}
+	}
+
+	option = {
+		name = estonia.403.a
+		log = "[GetDateText]: [This.GetName]: event estonia.403.a executed"
+
+		set_country_flag = EST_ekre_2019_election
+
+		# EKRE breakthrough
+		add_popularity = {
+			ideology = nationalist
+			popularity = 0.08
+		}
+		recalculate_party = yes
+
+		add_stability = -0.02
+
+		ai_chance = { base = 100 }
+	}
+}
+
+# 2023 - EKRE Post-Scandal Election
+country_event = {
+	id = estonia.404
+	title = estonia.404.t
+	desc = estonia.404.d
+	picture = GFX_report_event_generic_rally
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		date > 2023.3.5
+		has_country_flag = EST_ekre_has_formed
+		NOT = { has_country_flag = EST_ekre_2023_election }
+		NOT = { has_global_flag = EST_ekre_2023_happened }
+	}
+
+	mean_time_to_happen = {
+		days = 3
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = EST_ekre_2023_happened
+		}
+	}
+
+	option = {
+		name = estonia.404.a
+		log = "[GetDateText]: [This.GetName]: event estonia.404.a executed"
+
+		set_country_flag = EST_ekre_2023_election
+
+		# Slight decline post-scandal
+		add_popularity = {
+			ideology = nationalist
+			popularity = -0.02
+		}
+		recalculate_party = yes
+
+		ai_chance = { base = 100 }
+	}
+}

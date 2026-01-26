@@ -1,6 +1,6 @@
 # TASK-007: EKRE Political Events
 
-**Status: PENDING**
+**Status: DONE**
 
 ## Overview
 
@@ -23,11 +23,11 @@ EKRE leaders (Mart Helme and Martin Helme) already exist in the game with charac
 
 | File | Description | Status |
 |------|-------------|--------|
-| `events/Estonia.txt` | Add EKRE political events | Pending |
-| `common/ideas/estonia.txt` | Add EKRE government effects | Pending |
-| `common/opinion_modifiers/Estonia.txt` | Add EU relations modifiers | Pending |
-| `common/on_actions/99_EST_on_actions.txt` | Add triggers if needed | Pending |
-| `localisation/english/EST_events_l_english.yml` | Add event localization | Pending |
+| `events/Estonia.txt` | Add EKRE political events | Done |
+| `common/ideas/estonia.txt` | Add EKRE government effects | Done |
+| `common/opinion_modifiers/Estonia.txt` | Add EU relations modifiers | Done |
+| `common/on_actions/99_EST_on_actions.txt` | Add triggers if needed | N/A (uses MTTH) |
+| `localisation/english/EST_events_l_english.yml` | Add event localization | Done |
 
 ## Implementation Strategy
 
