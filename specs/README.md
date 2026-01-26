@@ -44,7 +44,7 @@ specs/
 | TASK-005 | Current Leadership | Add Kristen Michal as current PM (2024) | High | ✅ Done |
 | TASK-006 | Cyber & Hybrid Threats | 2007 cyber attacks, GPS jamming, border incidents | High | ✅ Done |
 | TASK-007 | EKRE Political Events | EKRE rise, nationalist rhetoric, coalition dynamics | Medium | ✅ Done |
-| TASK-008 | Ukraine Response | Estonia's response to 2022 Russian invasion | High | Pending |
+| TASK-008 | Ukraine Response | Estonia's response to 2022 Russian invasion | High | ✅ Done |
 | TASK-009 | Digital Society | E-residency, e-governance, digital initiatives | Low | Pending |
 | TASK-010 | Defense Modernization | NATO integration, military spending, conscription | Medium | Pending |
 
@@ -161,3 +161,56 @@ All file paths in ISSUE specs are relative to the mod root directory:
 ```
 /Users/tifox/Projects/Millennium-Dawn/
 ```
+
+## Missing GFX Assets (Low Priority)
+
+Custom GFX assets to be created after all TASKs are implemented. Currently using generic placeholders.
+
+### Leader Portraits
+
+| Portrait | Needed For | Size Needed | Status |
+|----------|------------|-------------|--------|
+| Siim Kallas | TASK-001 | Large (156x210) | Pending (small exists) |
+| Juhan Parts | TASK-001 | Large (156x210) | Pending (small exists) |
+| Arnold Ruutel | TASK-001 | Large + Small | Pending |
+| Toomas Hendrik Ilves | TASK-001 | Large + Small | Pending |
+| Kersti Kaljulaid | TASK-001 | Large (156x210) | Pending (small exists) |
+| Alar Karis | TASK-001 | Large + Small | Pending |
+| Lennart Meri | TASK-001 | Large (156x210) | Pending (small exists) |
+| Mart Helme | TASK-003 | Large + Small | Pending |
+| Martin Helme | TASK-003 | Large + Small | Pending |
+| Edgar Savisaar | TASK-003 | Large + Small | Pending |
+| Kristen Michal | TASK-005 | Large + Small | Pending |
+
+### Event Pictures
+
+| Asset | Needed For | Current Placeholder | Status |
+|-------|------------|---------------------|--------|
+| EU Accession ceremony | TASK-004 | `GFX_computer` | Pending |
+| NATO flag ceremony | TASK-004 | `GFX_computer` | Pending |
+| Euro currency/adoption | TASK-004 | `GFX_banking_crisis` | Pending |
+| COVID lockdown/pandemic | TASK-004 | `GFX_computer` | Pending |
+| 2007 Cyber attack visualization | TASK-006 | `GFX_computer` | Pending |
+| GPS jamming / electronic warfare | TASK-006 | `GFX_military_technology` | Pending |
+| Narva River border | TASK-006 | `GFX_report_event_soviet_soldiers` | Pending |
+| EKRE party rally | TASK-007 | `GFX_report_event_generic_rally` | Pending |
+| Estonian parliament (Riigikogu) | TASK-007 | `GFX_report_event_generic_parliament` | Pending |
+| Ukraine solidarity / military aid | TASK-008 | `GFX_report_event_military_parade` | Pending |
+| Ukrainian refugees arriving | TASK-008 | `GFX_report_event_generic_refugees` | Pending |
+| EU sanctions meeting | TASK-008 | `GFX_report_event_generic_parliament` | Pending |
+| NATO troops in Estonia | TASK-008 | `GFX_report_event_military_parade` | Pending |
+
+### Idea Icons
+
+| Icon | Needed For | Current Placeholder | Status |
+|------|------------|---------------------|--------|
+| Defense spending budget | TASK-008 | `generic_military_budget` | Pending |
+| NATO Forward Forces | TASK-008 | `generic_military_cooperation` | Pending |
+| Cyber defense | TASK-006 | `generic_cyber_security` | Pending |
+
+### Notes
+- Custom GFX can be added later without code changes - just update the `picture = ` references
+- **Portrait specs:** Large 156x210 or 512x512 DDS (DXT5), Small 65x67 DDS (DXT5)
+- **Event picture specs:** 460x400 DDS
+- **Idea icon specs:** 68x68 DDS
+- Some Estonia-specific GFX already exist: `GFX_EST_EuroVision`, `GFX_EST_LocalElections`, `GFX_EST_VictoryColumng`, `GFX_EST_NationalDay`, `GFX_EST_etv2`, `GFX_EST_SchoolShooting`, `GFX_bronze_night`, `GFX_cyber_attack`, `GFX_copterline_crash`

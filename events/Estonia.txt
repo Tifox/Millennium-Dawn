@@ -2237,3 +2237,294 @@ country_event = {
 		ai_chance = { base = 100 }
 	}
 }
+
+###################################
+# Ukraine Response Events (TASK-008)
+###################################
+
+# 2022 - Estonia Responds to Ukraine Invasion
+country_event = {
+	id = estonia.500
+	title = estonia.500.t
+	desc = estonia.500.d
+	picture = GFX_report_event_military_parade
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		OR = {
+			date > 2022.2.24
+			SOV = { has_war_with = UKR }
+		}
+		NOT = { has_country_flag = EST_ukraine_response }
+		NOT = { has_global_flag = EST_ukraine_response_happened }
+	}
+
+	mean_time_to_happen = {
+		days = 1
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = EST_ukraine_response_happened
+			set_global_flag = russia_ukraine_war
+		}
+	}
+
+	# Option A: Strong support
+	option = {
+		name = estonia.500.a
+		log = "[GetDateText]: [This.GetName]: event estonia.500.a executed"
+
+		set_country_flag = EST_ukraine_response
+		set_country_flag = EST_strong_ukraine_support
+
+		add_political_power = -50
+		add_stability = -0.05
+		add_war_support = 0.10
+
+		# Strong Ukraine support
+		UKR = {
+			add_opinion_modifier = { target = EST modifier = EST_ukraine_defender }
+		}
+		EST = {
+			add_opinion_modifier = { target = UKR modifier = EST_supports_ukraine }
+		}
+
+		# Worsened Russia relations
+		SOV = {
+			add_opinion_modifier = { target = EST modifier = EST_hostile_stance }
+		}
+
+		# Improved NATO relations
+		every_country = {
+			limit = {
+				is_in_faction_with = EST
+			}
+			add_opinion_modifier = { target = EST modifier = EST_frontline_solidarity }
+		}
+
+		ai_chance = { base = 90 }
+	}
+
+	# Option B: Measured response
+	option = {
+		name = estonia.500.b
+		log = "[GetDateText]: [This.GetName]: event estonia.500.b executed"
+
+		set_country_flag = EST_ukraine_response
+
+		add_political_power = -25
+		add_stability = -0.03
+		add_war_support = 0.05
+
+		UKR = {
+			add_opinion_modifier = { target = EST modifier = EST_ukraine_supporter }
+		}
+
+		SOV = {
+			add_opinion_modifier = { target = EST modifier = EST_moderate_stance }
+		}
+
+		ai_chance = { base = 10 }
+	}
+}
+
+# 2022 - Ukrainian Refugees Arrive
+country_event = {
+	id = estonia.501
+	title = estonia.501.t
+	desc = estonia.501.d
+	picture = GFX_report_event_generic_refugees
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		has_country_flag = EST_ukraine_response
+		date > 2022.3.1
+		NOT = { has_country_flag = EST_refugees_accepted }
+		NOT = { has_global_flag = EST_refugees_happened }
+	}
+
+	mean_time_to_happen = {
+		days = 14
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = EST_refugees_happened
+		}
+	}
+
+	# Option A: Welcome all refugees
+	option = {
+		name = estonia.501.a
+		log = "[GetDateText]: [This.GetName]: event estonia.501.a executed"
+
+		set_country_flag = EST_refugees_accepted
+		set_country_flag = EST_generous_refugee_policy
+
+		add_stability = 0.02
+		add_political_power = -25
+
+		# Manpower from refugees
+		add_manpower = 5000
+
+		# Strong Ukraine relations
+		UKR = {
+			add_opinion_modifier = { target = EST modifier = EST_refugee_sanctuary }
+		}
+
+		ai_chance = { base = 80 }
+	}
+
+	# Option B: Limited acceptance
+	option = {
+		name = estonia.501.b
+		log = "[GetDateText]: [This.GetName]: event estonia.501.b executed"
+
+		set_country_flag = EST_refugees_accepted
+
+		add_manpower = 2000
+
+		UKR = {
+			add_opinion_modifier = { target = EST modifier = EST_refugee_support }
+		}
+
+		ai_chance = { base = 20 }
+	}
+}
+
+# 2022 - Estonia Leads Sanctions Advocacy
+country_event = {
+	id = estonia.502
+	title = estonia.502.t
+	desc = estonia.502.d
+	picture = GFX_report_event_generic_parliament
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		has_country_flag = EST_strong_ukraine_support
+		date > 2022.3.1
+		NOT = { has_country_flag = EST_sanctions_leader }
+		NOT = { has_global_flag = EST_sanctions_leadership_happened }
+	}
+
+	mean_time_to_happen = {
+		days = 7
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = EST_sanctions_leadership_happened
+		}
+	}
+
+	# Option A: Push for maximum sanctions
+	option = {
+		name = estonia.502.a
+		log = "[GetDateText]: [This.GetName]: event estonia.502.a executed"
+
+		set_country_flag = EST_sanctions_leader
+		set_country_flag = EST_maximum_sanctions
+
+		add_political_power = 25
+
+		# Kallas gains international prestige
+		add_stability = 0.02
+
+		# Improved EU relations
+		every_country = {
+			limit = {
+				OR = {
+					tag = GER
+					tag = FRA
+					tag = POL
+					tag = SWE
+					tag = FIN
+				}
+			}
+			add_opinion_modifier = { target = EST modifier = EST_sanctions_leadership }
+		}
+
+		# Russia sees Estonia as hostile
+		SOV = {
+			add_opinion_modifier = { target = EST modifier = EST_sanctions_advocate }
+		}
+
+		ai_chance = { base = 90 }
+	}
+
+	# Option B: Support sanctions but avoid spotlight
+	option = {
+		name = estonia.502.b
+		log = "[GetDateText]: [This.GetName]: event estonia.502.b executed"
+
+		set_country_flag = EST_sanctions_leader
+
+		add_political_power = 10
+
+		ai_chance = { base = 10 }
+	}
+}
+
+# 2022 - NATO Upgrades Baltic Presence
+country_event = {
+	id = estonia.503
+	title = estonia.503.t
+	desc = estonia.503.d
+	picture = GFX_report_event_military_parade
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		has_country_flag = EST_ukraine_response
+		date > 2022.6.1
+		is_in_faction = yes
+		NOT = { has_country_flag = EST_nato_upgrade }
+		NOT = { has_global_flag = EST_nato_upgrade_happened }
+	}
+
+	mean_time_to_happen = {
+		days = 14
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = EST_nato_upgrade_happened
+		}
+	}
+
+	option = {
+		name = estonia.503.a
+		log = "[GetDateText]: [This.GetName]: event estonia.503.a executed"
+
+		set_country_flag = EST_nato_upgrade
+
+		add_stability = 0.05
+		add_political_power = 50
+
+		# NATO Forward Forces presence
+		add_ideas = EST_nato_forward_forces
+
+		# Improved UK relations (battlegroup leader)
+		ENG = {
+			add_opinion_modifier = { target = EST modifier = EST_battlegroup_host }
+		}
+
+		# Improved NATO relations
+		every_country = {
+			limit = {
+				is_in_faction_with = EST
+			}
+			add_opinion_modifier = { target = EST modifier = EST_forward_defense_partner }
+		}
+
+		ai_chance = { base = 100 }
+	}
+}

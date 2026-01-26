@@ -929,5 +929,65 @@ local_resources_chromium_factor = 0.10
 				drift_defence_factor = 0.15
 			}
 		}
+
+		# Ukraine Response (TASK-008)
+
+		# Defense Spending Tiers
+		EST_defense_spending_3 = {
+			picture = generic_military_budget
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				consumer_goods_factor = 0.02
+				army_org_factor = 0.05
+				training_time_factor = -0.10
+			}
+		}
+
+		EST_defense_spending_4 = {
+			picture = generic_military_budget
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				consumer_goods_factor = 0.04
+				army_org_factor = 0.10
+				training_time_factor = -0.15
+				army_attack_factor = 0.05
+			}
+		}
+
+		EST_defense_spending_5 = {
+			picture = generic_military_budget
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				consumer_goods_factor = 0.06
+				army_org_factor = 0.15
+				training_time_factor = -0.20
+				army_attack_factor = 0.10
+				army_defence_factor = 0.10
+			}
+		}
+
+		# NATO Forward Land Forces
+		EST_nato_forward_forces = {
+			picture = generic_military_cooperation
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				stability_factor = 0.05
+				army_org_factor = 0.10
+				planning_speed = 0.10
+				army_defence_factor = 0.05
+			}
+		}
 	}
 }

@@ -1,6 +1,6 @@
 # TASK-008: Ukraine Response
 
-**Status: PENDING**
+**Status: DONE**
 
 ## Overview
 
@@ -24,11 +24,12 @@ Estonia lacks events for the major geopolitical shift caused by the 2022 invasio
 
 | File | Description | Status |
 |------|-------------|--------|
-| `events/Estonia.txt` | Add Ukraine response events | Pending |
-| `common/ideas/estonia.txt` | Add defense spending/solidarity ideas | Pending |
-| `common/decisions/EST_decisions.txt` | Add defense spending decisions (new file) | Pending |
-| `common/opinion_modifiers/Estonia.txt` | Add Ukraine solidarity modifiers | Pending |
-| `localisation/english/EST_events_l_english.yml` | Add event localization | Pending |
+| `events/Estonia.txt` | Add Ukraine response events | Done |
+| `common/ideas/estonia.txt` | Add defense spending/solidarity ideas | Done |
+| `common/decisions/EST_decisions.txt` | Add defense spending decisions (new file) | Done |
+| `common/decisions/categories/estonia_decisions_categories.txt` | Add defense spending category | Done |
+| `common/opinion_modifiers/Estonia.txt` | Add Ukraine solidarity modifiers | Done |
+| `localisation/english/EST_events_l_english.yml` | Add event localization | Done |
 
 ## Implementation Strategy
 
