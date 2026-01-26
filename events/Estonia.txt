@@ -1760,7 +1760,7 @@ country_event = {
 					tag = USA
 					tag = GER
 					tag = FRA
-					tag = ENG
+					tag = GBR
 				}
 			}
 			add_opinion_modifier = { target = EST modifier = EST_cyber_solidarity }
@@ -2006,8 +2006,8 @@ country_event = {
 
 		add_stability = -0.01
 
-		SOV = {
-			add_opinion_modifier = { target = EST modifier = EST_airspace_violator }
+		EST = {
+			add_opinion_modifier = { target = SOV modifier = EST_airspace_violator }
 		}
 
 		ai_chance = { base = 100 }
