@@ -20,12 +20,12 @@ Following the March 2019 parliamentary elections, EKRE entered government as par
   - Multiple racist and sexist statements by EKRE ministers
 
 ## Requirements
-- [ ] Create event for EKRE government formation
-- [ ] Trigger after April 29, 2019
-- [ ] Require EKRE formation flag
-- [ ] Add stability impact and EU relations penalty
-- [ ] Add EKRE government national spirit
-- [ ] Add localization
+- [x] Create event for EKRE government formation
+- [x] Trigger after April 29, 2019
+- [x] Require EKRE formation flag
+- [x] Add stability impact and EU relations penalty
+- [x] Add EKRE government national spirit
+- [x] Add localization
 
 ## Files to Modify
 | File | Action | Description |
@@ -145,13 +145,13 @@ EST_far_right_government = {
 ```
 
 ## Acceptance Criteria
-- [ ] Event fires after April 29, 2019
-- [ ] Requires EKRE formation flag
-- [ ] Stability penalty applied
-- [ ] National spirit added
-- [ ] EU opinion penalties applied
-- [ ] Nat_Populism popularity increases
-- [ ] All localization displays correctly
+- [x] Event fires after April 29, 2019
+- [x] Requires EKRE formation flag
+- [x] Stability penalty applied
+- [x] National spirit added
+- [x] EU opinion penalties applied
+- [x] Nat_Populism popularity increases
+- [x] All localization displays correctly
 
 ## Dependencies
 - Depends on: ISSUE-001 (EKRE Formation)

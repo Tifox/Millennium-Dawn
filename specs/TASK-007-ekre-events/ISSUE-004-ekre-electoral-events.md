@@ -25,10 +25,10 @@ These events provide flavor for EKRE's political trajectory.
 - Context: After government collapse scandal
 
 ## Requirements
-- [ ] Create events for 2019 and 2023 elections
-- [ ] Include popularity shifts
-- [ ] Fire only once each
-- [ ] Add localization
+- [x] Create events for 2019 and 2023 elections
+- [x] Include popularity shifts
+- [x] Fire only once each
+- [x] Add localization
 
 ## Files to Modify
 | File | Action | Description |
@@ -148,11 +148,11 @@ country_event = {
 ```
 
 ## Acceptance Criteria
-- [ ] 2019 event fires after March 3, 2019
-- [ ] 2023 event fires after March 5, 2023
-- [ ] Both require EKRE formation flag
-- [ ] Popularity changes are appropriate
-- [ ] All localization displays correctly
+- [x] 2019 event fires after March 3, 2019
+- [x] 2023 event fires after March 5, 2023
+- [x] Both require EKRE formation flag
+- [x] Popularity changes are appropriate
+- [x] All localization displays correctly
 
 ## Dependencies
 - Depends on: ISSUE-001 (EKRE Formation)

@@ -60,3 +60,25 @@
  EST_border_provocation_target: "Border Provocation Aggressor"
  EST_border_solidarity: "Solidarity Against Border Provocations"
  EST_airspace_violator: "Airspace Violator"
+
+ # EKRE Political Events
+ estonia.401.t: "EKRE Enters Government Coalition"
+ estonia.401.d: "Following the March elections, the Conservative People's Party of Estonia (EKRE) has entered the government as part of a coalition with the Centre Party and Isamaa. Prime Minister Jüri Ratas leads the new cabinet, with EKRE securing key ministerial positions.\n\nMart Helme becomes Interior Minister while his son Martin Helme takes the Finance Ministry. This marks the first time since independence that a far-right party has held power in Estonia.\n\nThe new government has already sparked controversy, with critics warning about the impact on Estonia's international reputation and democratic norms."
+ estonia.401.a: "A controversial new chapter begins."
+
+ estonia.402.t: "Coalition Government Collapses"
+ estonia.402.d: "Prime Minister Jüri Ratas has resigned following a corruption scandal involving the Porto Franco real estate development. The Centre Party's involvement in the scandal has brought down the entire coalition government, ending EKRE's controversial time in power.\n\nThe Reform Party, led by Kaja Kallas, is expected to form a new government. This marks the end of a turbulent chapter in Estonian politics, as the far-right EKRE loses its ministerial positions.\n\nEuropean partners have quietly expressed relief at the development."
+ estonia.402.a: "The coalition crumbles."
+
+ estonia.403.t: "EKRE Electoral Breakthrough"
+ estonia.403.d: "The parliamentary elections have concluded with a stunning result for the Conservative People's Party (EKRE). The nationalist party has won 17.8% of the vote and secured 19 seats in the Riigikogu, making them the third-largest party.\n\nThis represents a major breakthrough for the party, which has transformed from a marginal political force to a potential kingmaker in coalition negotiations. Their anti-immigration and euroskeptic message has resonated with a significant portion of the electorate."
+ estonia.403.a: "The political landscape shifts."
+
+ estonia.404.t: "EKRE Maintains Electoral Support"
+ estonia.404.d: "Despite the scandals that ended their time in government, EKRE has maintained substantial support in the parliamentary elections. The party won 16.1% of the vote and 17 seats, a slight decline from 2019 but still a significant presence.\n\nWhile they will remain in opposition as the Reform Party leads the new government, EKRE continues to represent a major political force in Estonian politics."
+ estonia.404.a: "The far-right remains a factor."
+
+ EST_ekre_in_government: "EKRE Coalition Government"
+ EST_ekre_in_government_desc: "The far-right Conservative People's Party is part of the governing coalition, leading to domestic controversy and strained relations with European partners."
+
+ EST_far_right_government: "Far-Right Coalition Partner"

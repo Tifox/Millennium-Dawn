@@ -82,4 +82,10 @@ opinion_modifiers = {
 	EST_cyber_defense_hub = {
 		value = 10
 	}
+
+	# EKRE Government
+	EST_far_right_government = {
+		value = -20
+		decay = 0.5
+	}
 }
