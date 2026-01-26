@@ -12,7 +12,8 @@ specs/
 ├── TASK-001-political-leaders/            # Prime Ministers & Presidents
 ├── TASK-002-election-events/              # Election mechanics
 ├── TASK-003-alternative-leaders/          # EKRE, Centre Party paths
-└── TASK-004-historical-events/            # Missing historical events
+├── TASK-004-historical-events/            # Missing historical events
+└── TASK-006-cyber-hybrid-events/          # Cyber attacks & hybrid warfare
 ```
 
 ## TASKs Overview
@@ -23,6 +24,7 @@ specs/
 | TASK-002 | Election Events | Create election mechanics to rotate leaders | High | |
 | TASK-003 | Alternative Leaders | Add EKRE/nationalist and Centre Party leaders for focus paths | Medium | |
 | TASK-004 | Historical Events | Expand historical flavor events (EU, NATO, Euro, etc.) | Medium | ✅ Done |
+| TASK-006 | Cyber & Hybrid Threats | 2007 cyber attacks, GPS jamming, border incidents | High | ✅ Done |
 
 ## Workflow
 
