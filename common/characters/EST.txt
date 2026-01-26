@@ -307,4 +307,293 @@ characters = {
 		}
 	}
 
+	# Estonian Prime Ministers
+
+	EST_edgar_savisaar = {
+		name = "Edgar Savisaar"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EST/edgar_savisaar.dds"
+			}
+		}
+		country_leader = {
+			desc = "EST_EDGAR_SAVISAAR_DESC"
+			expire = "2022.10.20"
+			ideology = oligarchism
+			traits = {
+				neutrality_oligarchism
+				career_politician
+				popular_figurehead
+			}
+		}
+	}
+
+	EST_siim_kallas = {
+		name = "Siim Kallas"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EST/siim_kallas.dds"
+			}
+		}
+		country_leader = {
+			expire = "2050.1.1"
+			ideology = liberalism
+			traits = {
+				western_liberalism
+				economist
+				pro_american
+			}
+		}
+	}
+
+	EST_juhan_parts = {
+		name = "Juhan Parts"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EST/juhan_parts.dds"
+			}
+		}
+		country_leader = {
+			expire = "2050.1.1"
+			ideology = conservatism
+			traits = {
+				western_conservatism
+				judiciary
+				transparent
+			}
+		}
+	}
+
+	EST_andrus_ansip = {
+		name = "Andrus Ansip"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EST/Andrus_Ansip.dds"
+			}
+		}
+		country_leader = {
+			expire = "2050.1.1"
+			ideology = liberalism
+			traits = {
+				western_liberalism
+				career_politician
+				pro_american
+				tech_savy
+			}
+		}
+	}
+
+	EST_taavi_roivas = {
+		name = "Taavi Roivas"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EST/Taavi_Roivas.dds"
+			}
+		}
+		country_leader = {
+			expire = "2050.1.1"
+			ideology = liberalism
+			traits = {
+				western_liberalism
+				inexperienced
+				pro_american
+			}
+		}
+	}
+
+	EST_juri_ratas = {
+		name = "Juri Ratas"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EST/Juri_Ratas.dds"
+			}
+		}
+		country_leader = {
+			desc = "EST_JURI_RATAS_DESC"
+			expire = "2050.1.1"
+			ideology = social_democrat
+			traits = {
+				party_trait_social_democrat
+				political_dancer
+			}
+		}
+		country_leader = {
+			desc = "EST_JURI_RATAS_DESC"
+			expire = "2050.1.1"
+			ideology = oligarchism
+			traits = {
+				neutrality_oligarchism
+				coalition_builder
+			}
+		}
+	}
+
+	EST_jaan_toots = {
+		name = "Jaan Toots"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EST/Jaan_Toots.dds"
+			}
+		}
+		country_leader = {
+			desc = "EST_JAAN_TOOTS_DESC"
+			expire = "2050.1.1"
+			ideology = oligarchism
+			traits = {
+				neutrality_oligarchism
+				economist
+			}
+		}
+	}
+
+	EST_kaja_kallas = {
+		name = "Kaja Kallas"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EST/kaja_kallas.dds"
+			}
+		}
+		country_leader = {
+			expire = "2050.1.1"
+			ideology = liberalism
+			traits = {
+				western_liberalism
+				lawyer
+				pro_american
+			}
+		}
+	}
+
+	# Estonian Presidents
+
+	EST_lennart_meri = {
+		name = "Lennart Meri"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EST/lennart_meri.dds"
+			}
+		}
+		country_leader = {
+			expire = "2006.3.14"
+			ideology = conservatism
+			traits = {
+				western_conservatism
+				diplomat
+				writer
+			}
+		}
+	}
+
+	EST_arnold_ruutel = {
+		name = "Arnold Ruutel"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EST/arnold_ruutel.dds"
+			}
+		}
+		country_leader = {
+			expire = "2050.1.1"
+			ideology = conservatism
+			traits = {
+				western_conservatism
+				agrarian_expert
+				career_politician
+			}
+		}
+	}
+
+	EST_toomas_ilves = {
+		name = "Toomas Hendrik Ilves"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EST/toomas_ilves.dds"
+			}
+		}
+		country_leader = {
+			expire = "2050.1.1"
+			ideology = social_democrat
+			traits = {
+				party_trait_social_democrat
+				diplomat
+				pro_american
+				journalist
+			}
+		}
+	}
+
+	EST_kersti_kaljulaid = {
+		name = "Kersti Kaljulaid"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EST/kersti_kaljulaid.dds"
+			}
+		}
+		country_leader = {
+			expire = "2050.1.1"
+			ideology = liberalism
+			traits = {
+				western_liberalism
+				economist
+			}
+		}
+	}
+
+	EST_alar_karis = {
+		name = "Alar Karis"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EST/alar_karis.dds"
+			}
+		}
+		country_leader = {
+			expire = "2050.1.1"
+			ideology = liberalism
+			traits = {
+				western_liberalism
+				scientist
+				transparent
+			}
+		}
+	}
+
+	# EKRE Leaders
+
+	EST_mart_helme = {
+		name = "Mart Helme"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EST/mart_helme.dds"
+			}
+		}
+		country_leader = {
+			desc = "EST_MART_HELME_DESC"
+			expire = "2050.1.1"
+			ideology = Nat_Populism
+			traits = {
+				nationalist_Nat_Populism
+				former_interior_minister
+				fascist_demagogue
+			}
+		}
+	}
+
+	EST_martin_helme = {
+		name = "Martin Helme"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EST/martin_helme.dds"
+			}
+		}
+		country_leader = {
+			desc = "EST_MARTIN_HELME_DESC"
+			expire = "2050.1.1"
+			ideology = Nat_Populism
+			traits = {
+				nationalist_Nat_Populism
+				former_finance_minister
+				economist
+			}
+		}
+	}
+
 }
