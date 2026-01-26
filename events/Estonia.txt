@@ -1837,6 +1837,7 @@ country_event = {
 		tag = EST
 		date > 2024.1.1
 		NOT = { has_country_flag = EST_gps_jamming_recent }
+		NOT = { has_war_with = SOV }
 		SOV = { exists = yes }
 		OR = {
 			SOV = { has_war = yes }
@@ -1903,6 +1904,7 @@ country_event = {
 		date > 2024.5.1
 		NOT = { has_country_flag = EST_narva_buoy_incident }
 		NOT = { has_global_flag = EST_narva_buoy_happened }
+		NOT = { has_war_with = SOV }
 		SOV = { exists = yes }
 	}
 
