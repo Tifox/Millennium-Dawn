@@ -464,6 +464,25 @@ characters = {
 		}
 	}
 
+	EST_kristen_michal = {
+		name = "Kristen Michal"
+		portraits = {
+			civilian = {
+				large = "gfx/leaders/EST/kristen_michal.dds"
+			}
+		}
+		country_leader = {
+			desc = "EST_KRISTEN_MICHAL_DESC"
+			expire = "2050.1.1"
+			ideology = liberalism
+			traits = {
+				western_liberalism
+				economist
+				tech_savy
+			}
+		}
+	}
+
 	# Estonian Presidents
 
 	EST_lennart_meri = {
