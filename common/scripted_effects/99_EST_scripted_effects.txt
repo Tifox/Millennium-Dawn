@@ -1,3 +1,232 @@
+# Estonian Leader Rotation Effects for Elections
+# These effects create the appropriate Prime Minister based on the game date when an election occurs
+
+# Create Estonian Reform Party Leader (Liberalism)
+# Reform Party PMs: Siim Kallas (2002-2003), Andrus Ansip (2005-2014), Taavi Roivas (2014-2016), Kaja Kallas (2021+)
+EST_create_reform_leader = {
+	if = {
+		limit = { date < 2005.4.1 }
+		# Siim Kallas (2002-2003)
+		create_country_leader = {
+			name = "Siim Kallas"
+			desc = EST_siim_kallas_desc
+			picture = "siim_kallas.dds"
+			expire = "2050.1.1"
+			ideology = liberalism
+			traits = {
+				western_liberalism
+				economist
+				pro_american
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			date > 2005.4.1
+			date < 2014.3.1
+		}
+		# Andrus Ansip (2005-2014)
+		create_country_leader = {
+			name = "Andrus Ansip"
+			desc = EST_andrus_ansip_desc
+			picture = "Andrus_Ansip.dds"
+			expire = "2050.1.1"
+			ideology = liberalism
+			traits = {
+				western_liberalism
+				career_politician
+				pro_american
+				tech_savy
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			date > 2014.3.1
+			date < 2021.1.1
+		}
+		# Taavi Roivas (2014-2016) - also used for Juri Ratas coalition period
+		create_country_leader = {
+			name = "Taavi Roivas"
+			desc = EST_taavi_roivas_desc
+			picture = "Taavi_Roivas.dds"
+			expire = "2050.1.1"
+			ideology = liberalism
+			traits = {
+				western_liberalism
+				inexperienced
+				pro_american
+			}
+		}
+	}
+	else = {
+		# Kaja Kallas (2021+)
+		create_country_leader = {
+			name = "Kaja Kallas"
+			desc = EST_kaja_kallas_desc
+			picture = "kaja_kallas.dds"
+			expire = "2050.1.1"
+			ideology = liberalism
+			traits = {
+				western_liberalism
+				lawyer
+				pro_american
+			}
+		}
+	}
+}
+
+# Create Estonian Isamaa Leader (Conservatism)
+# Isamaa PMs: Mart Laar (1999-2002), Juhan Parts (2003-2005), Urmas Reinsalu (modern era)
+EST_create_isamaa_leader = {
+	if = {
+		limit = { date < 2003.4.1 }
+		# Mart Laar (1999-2002)
+		create_country_leader = {
+			name = "Mart Laar"
+			desc = EST_mart_laar_desc
+			picture = "mart_laar.dds"
+			expire = "2050.1.1"
+			ideology = conservatism
+			traits = {
+				western_conservatism
+				pro_american
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			date > 2003.4.1
+			date < 2007.1.1
+		}
+		# Juhan Parts (2003-2005)
+		create_country_leader = {
+			name = "Juhan Parts"
+			desc = EST_juhan_parts_desc
+			picture = "juhan_parts.dds"
+			expire = "2050.1.1"
+			ideology = conservatism
+			traits = {
+				western_conservatism
+				judiciary
+				transparent
+			}
+		}
+	}
+	else_if = {
+		limit = {
+			date > 2007.1.1
+			date < 2020.1.1
+		}
+		# Margus Tsahkna (2016-2018 party leader)
+		create_country_leader = {
+			name = "Margus Tsahkna"
+			desc = EST_margus_tsahkna_desc
+			picture = "margus_tsahkna.dds"
+			expire = "2050.1.1"
+			ideology = conservatism
+			traits = {
+				western_conservatism
+			}
+		}
+	}
+	else = {
+		# Urmas Reinsalu (modern era, party chairman 2020+)
+		create_country_leader = {
+			name = "Urmas Reinsalu"
+			desc = EST_urmas_reinsalu_desc
+			picture = "margus_tsahkna.dds"
+			expire = "2050.1.1"
+			ideology = conservatism
+			traits = {
+				western_conservatism
+				hawk
+			}
+		}
+	}
+}
+
+# Create Estonian Centre Party Leader (Agrarianism/Social Democrat)
+# Centre Party PMs: Edgar Savisaar (long-time leader), Juri Ratas (2016-2021)
+EST_create_centre_leader = {
+	if = {
+		limit = { date < 2016.11.1 }
+		# Edgar Savisaar (long-time party leader)
+		create_country_leader = {
+			name = "Edgar Savisaar"
+			desc = EST_edgar_savisaar_desc
+			picture = "edgar_savisaar.dds"
+			expire = "2050.1.1"
+			ideology = social_democrat
+			traits = {
+				party_trait_social_democrat
+				career_politician
+			}
+		}
+	}
+	else = {
+		# Juri Ratas (PM 2016-2021)
+		create_country_leader = {
+			name = "Juri Ratas"
+			desc = EST_juri_ratas_desc
+			picture = "Juri_Ratas.dds"
+			expire = "2050.1.1"
+			ideology = social_democrat
+			traits = {
+				party_trait_social_democrat
+				political_dancer
+			}
+		}
+	}
+}
+
+# Create Estonian EKRE Leader (Nationalist/Nat_Populism)
+# EKRE Leader: Mart Helme (founding leader and chairman)
+EST_create_ekre_leader = {
+	# Mart Helme is the founding leader and primary face of EKRE
+	create_country_leader = {
+		name = "Mart Helme"
+		desc = EST_mart_helme_desc
+		picture = "mart_helme.dds"
+		expire = "2050.1.1"
+		ideology = Nat_Populism
+		traits = {
+			nationalist_Nat_Populism
+		}
+	}
+}
+
+# Create Estonian SDE (Social Democratic) Leader
+# SDE PMs: Ivari Padar (leader until 2015), Jevgeni Ossinovski (2015-2019)
+EST_create_sde_leader = {
+	if = {
+		limit = { date < 2015.1.1 }
+		# Ivari Padar
+		create_country_leader = {
+			name = "Ivari Padar"
+			desc = EST_ivari_padar_desc
+			picture = "ivari_padar.dds"
+			expire = "2050.1.1"
+			ideology = socialism
+			traits = {
+				western_socialism
+			}
+		}
+	}
+	else = {
+		# Jevgeni Ossinovski (2015-2019)
+		create_country_leader = {
+			name = "Jevgeni Ossinovski"
+			desc = EST_jevgeni_ossinovski_desc
+			picture = "jevgeni_ossinovski.dds"
+			expire = "2050.1.1"
+			ideology = socialism
+			traits = {
+				western_socialism
+			}
+		}
+	}
+}
 
 EST_random_ai = {
 	hidden_effect = {

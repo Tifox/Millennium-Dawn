@@ -643,8 +643,36 @@ l_english:
  EST_bt_fuel_researching: "Fuel Processing Discoveries"
  EST_bt_opt_out: "Opting Out Of The Program"
 
- # Leader Description
+ # Leader Descriptions
  EDGAR_SAVISAAR_DESC: "Edgar Savisaar is an Estonian politician, one of the founding members of Popular Front of Estonia and the Centre Party. He has served as the acting Prime Minister of Estonia, Minister of the Interior, Minister of Economic Affairs and Communications and mayor of Tallinn."
+ EST_EDGAR_SAVISAAR_DESC: "Edgar Savisaar was the founder and longtime chairman of the Estonian Centre Party. A pivotal figure in Estonia's independence movement, he served as Prime Minister from 1990 to 1992 and later as Mayor of Tallinn for over a decade. Known for his populist style and ability to appeal to Russian-speaking minorities, Savisaar remained a controversial but influential figure in Estonian politics until his death in 2022."
+ EST_JURI_RATAS_DESC: "Juri Ratas served as Prime Minister of Estonia from 2016 to 2021, leading coalition governments that included both left-wing and right-wing parties. A pragmatic politician known for his coalition-building skills, Ratas brought the Centre Party back into government after years in opposition. His tenure was marked by economic growth but also controversy over coalition partnerships."
+ EST_JAAN_TOOTS_DESC: "Jaan Toots is an Estonian economist and politician who has been associated with the Centre Party's moderate wing. With a background in economics and public administration, Toots represents the party's focus on social welfare and economic pragmatism rather than ethnic politics."
+
+ # Reform Party Leaders
+ EST_siim_kallas_desc: "A prominent economist and politician, Siim Kallas served as Prime Minister from 2002 to 2003 and later became European Commissioner for Transport. He is known for his economic reforms and unwavering pro-European stance, playing a key role in Estonia's integration with Western institutions."
+ EST_andrus_ansip_desc: "Andrus Ansip is Estonia's longest-serving Prime Minister, leading the country from 2005 to 2014. He is known for his liberal economic policies, pioneering digital governance initiatives including e-Residency, and his staunch pro-EU and pro-NATO positions. Under his leadership, Estonia became one of the most digitally advanced nations in the world."
+ EST_taavi_roivas_desc: "The youngest Prime Minister in Estonian history at age 34, Taavi Roivas represents a new generation of Estonian politicians committed to modernization and European integration. He served as PM from 2014 to 2016, continuing Estonia's digital transformation and maintaining strong ties with NATO allies."
+ EST_kaja_kallas_desc: "Kaja Kallas, daughter of former PM Siim Kallas, became Prime Minister in 2021 as the first female head of government in Estonian history. She leads the Reform Party with a strong pro-European and pro-NATO stance, becoming one of the most vocal European critics of Russian aggression following the 2022 invasion of Ukraine."
+
+ # Isamaa Leaders
+ EST_mart_laar_desc: "A historian turned politician, Mart Laar implemented radical free-market reforms during his two terms as Prime Minister that transformed Estonia into one of the most economically free nations in the world. His flat tax system and privatization programs became models studied globally."
+ EST_juhan_parts_desc: "Juhan Parts led the Res Publica party to a surprise victory in 2003 before it merged with Isamaa. His government focused on anti-corruption measures and successfully completed Estonia's path to both EU and NATO membership in 2004, marking a historic turning point for the nation."
+ EST_margus_tsahkna_desc: "Margus Tsahkna served as chairman of Isamaa from 2016 to 2018, representing a more moderate wing of Estonian conservatism. He has held various ministerial positions and is known for his focus on defense and security issues."
+ EST_urmas_reinsalu_desc: "A conservative politician and former Minister of Justice and Foreign Affairs, Urmas Reinsalu is known for his strong stance on national security and defense matters. He has been a vocal advocate for increased NATO presence in the Baltic states and has taken a hawkish position on Russian relations."
+
+ # Centre Party Leaders
+ EST_edgar_savisaar_desc: "A veteran politician who played a key role in Estonia's independence movement as leader of the Popular Front, Edgar Savisaar founded the Centre Party and led it for decades. His party has traditionally appealed to Russian-speaking minorities and advocates for social welfare policies."
+ EST_juri_ratas_desc: "Juri Ratas became Prime Minister in 2016 after forming an unexpected coalition, breaking the Centre Party's long exclusion from government. He represents a more moderate wing of the party and has worked to reduce ethnic tensions while maintaining pragmatic relations with both East and West."
+
+ # EKRE Leaders
+ EST_mart_helme_desc: "The co-founder and former chairman of EKRE, Mart Helme is a former diplomat who has become the face of Estonian nationalism and euroscepticism. He advocates for traditional values, stricter immigration policies, and greater national sovereignty, often courting controversy with his provocative statements."
+ EST_MART_HELME_DESC: "Mart Helme is the founder and former chairman of the Estonian Conservative People's Party (EKRE). A former diplomat who served as Estonia's ambassador to Russia, he later became a prominent voice for nationalist and Eurosceptic policies. Known for his controversial statements and anti-establishment rhetoric, Helme served as Minister of the Interior from 2019 to 2020. Under his leadership, EKRE transformed from a fringe movement into a major political force in Estonia."
+ EST_MARTIN_HELME_DESC: "Martin Helme is the current chairman of EKRE and son of party founder Mart Helme. An economist by training, he served as Minister of Finance from 2019 to 2021, where he advocated for fiscal conservatism and opposed what he viewed as excessive EU integration. Under his leadership since November 2020, EKRE has maintained its position as a major political force in Estonia, advocating for national sovereignty, traditional values, and Eurosceptic policies."
+
+ # SDE Leaders
+ EST_ivari_padar_desc: "Ivari Padar served as chairman of the Social Democratic Party and as Minister of Finance. He is known for his moderate social democratic positions and support for European integration, representing the traditional wing of Estonian social democracy."
+ EST_jevgeni_ossinovski_desc: "Jevgeni Ossinovski led the Social Democratic Party from 2015 to 2019, becoming one of the youngest party leaders in Estonian history. Of Russian-Estonian background, he has advocated for improved integration policies and progressive social reforms."
 
  # Opinion Modifier
  EST_suppressing_russian_language: "Suppressing the Russian Language"
@@ -790,3 +818,103 @@ l_english:
  EST_lean_west_flag: "Leaned Towards the West"
  EST_lean_east_flag: "Leaned Towards the East"
  EST_lean_neutral_flag: "Leaned Towards True Neutrality"
+
+ # EKRE Path
+ EST_rise_of_ekre: "Rise of EKRE"
+ EST_rise_of_ekre_desc: "The Estonian Conservative People's Party (EKRE) has emerged as a powerful force in Estonian politics. Founded in 2012, the party channels growing nationalist sentiment and opposition to liberal establishment policies. It is time to embrace their vision for Estonia's future."
+ EST_mart_helme_leadership: "Mart Helme's Leadership"
+ EST_mart_helme_leadership_desc: "Mart Helme, the founder of EKRE, shall lead our nation. His uncompromising stance on national sovereignty and traditional values will reshape Estonian politics."
+ EST_martin_helme_leadership: "Martin Helme Takes Charge"
+ EST_martin_helme_leadership_desc: "Martin Helme, the younger generation of EKRE leadership, brings both his father's nationalist convictions and a sharper focus on fiscal conservatism. Under his leadership, EKRE will chart a new course for Estonia."
+ EST_ekre_agenda: "The EKRE Agenda"
+ EST_ekre_agenda_desc: "With EKRE firmly in control, we can now implement our full agenda: national sovereignty, traditional values, and an Estonia-first approach to all policy matters."
+ EST_ekre_leaders_available_tt: "EKRE leaders Mart Helme and Martin Helme are now available."
+ EST_MART_HELME_DESC: "The co-founder and former chairman of EKRE, Mart Helme is a former diplomat who has become the face of Estonian nationalism and euroscepticism. He advocates for traditional values, stricter immigration policies, and greater national sovereignty."
+ EST_MARTIN_HELME_DESC: "Martin Helme represents the next generation of EKRE leadership, combining his father's nationalist convictions with a focus on fiscal conservatism and economic sovereignty. As a former Minister of Finance, he has pushed for tax reforms and reduced government spending."
+
+ # Centre Party Path
+ EST_centre_party_leadership: "Centre Party Leadership"
+ EST_centre_party_leadership_desc: "The Centre Party's grip on Estonian politics requires strong leadership. We must choose who will guide the party and the nation forward."
+ EST_savisaar_era: "The Savisaar Era"
+ EST_savisaar_era_desc: "Edgar Savisaar, the founder of the Centre Party and a titan of Estonian politics, shall lead us. His decades of experience and connection to the Russian-speaking community make him a formidable leader."
+ EST_ratas_government: "Ratas Forms Government"
+ EST_ratas_government_desc: "Juri Ratas, a pragmatic politician and skilled coalition builder, will lead the Centre Party and Estonia. His ability to work across political divides could bring stability to our nation."
+ EST_toots_moderate_path: "Toots' Moderate Path"
+ EST_toots_moderate_path_desc: "Jaan Toots represents the Centre Party's moderate, economically-focused wing. Under his leadership, we will prioritize sound economic policy over political controversy."
+ EST_centre_party_consolidation: "Consolidate Centre Power"
+ EST_centre_party_consolidation_desc: "The Centre Party has established itself as the dominant force in Estonian politics. Now we consolidate our gains and ensure the party's continued influence."
+ EST_centre_leaders_available_tt: "Centre Party leaders are now available."
+ EST_coalition_government_tt: "Coalition government formed - increased political flexibility."
+ EST_EDGAR_SAVISAAR_DESC: "Edgar Savisaar is an Estonian politician, one of the founding members of Popular Front of Estonia and the Centre Party. He has served as the acting Prime Minister of Estonia, Minister of the Interior, Minister of Economic Affairs and Communications and mayor of Tallinn."
+ EST_JURI_RATAS_DESC: "Juri Ratas became Prime Minister in 2016 after forming an unexpected coalition, breaking the Centre Party's long exclusion from government. He represents a more moderate wing of the party and has worked to reduce ethnic tensions while maintaining pragmatic relations with both East and West."
+ EST_JAAN_TOOTS_DESC: "Jaan Toots represents the Centre Party's moderate, economically-focused wing. With a background in business and economics, he prioritizes sound fiscal policy and pragmatic governance over ideological confrontation."
+
+ # Ideas
+ EST_ekre_government: "EKRE Government"
+ EST_ekre_government_desc: "EKRE's nationalist agenda is now being implemented across all levels of government, strengthening national identity and sovereignty."
+ EST_centre_party_dominance: "Centre Party Dominance"
+ EST_centre_party_dominance_desc: "The Centre Party has established itself as the preeminent political force in Estonia, bringing stability and pragmatic governance."
+
+ # EU Accession 2004
+ estonia.200.t: "Estonia Joins the European Union"
+ estonia.200.d: "On this historic day, May 1st, 2004, Estonia has officially become a member of the European Union. After years of democratic reforms and economic restructuring following our independence from the Soviet Union, we have achieved one of our greatest foreign policy goals. As part of the largest single EU enlargement in history, Estonia joins alongside nine other nations. This marks the beginning of a new chapter in Estonian history, bringing new opportunities for trade, investment, and closer cooperation with our European partners."
+ estonia.200.a: "A new era for Estonia begins!"
+
+ EST_eu_member_benefits: "EU Membership"
+ EST_eu_member_benefits_desc: "As a member of the European Union, Estonia benefits from access to the single market, structural funds, and closer political cooperation with fellow member states."
+ EST_fellow_eu_member: "Fellow EU Member"
+
+ # NATO Accession 2004
+ estonia.201.t: "Estonia Joins NATO"
+ estonia.201.d: "On March 29th, 2004, Estonia has officially become a member of the North Atlantic Treaty Organization. This historic achievement represents the culmination of years of military reform and diplomatic effort. As part of the largest NATO enlargement in history, Estonia joins alongside Latvia, Lithuania, Bulgaria, Romania, Slovakia, and Slovenia. Article 5 of the NATO treaty now guarantees our collective defense - an attack on Estonia is an attack on all NATO members. Our security is now intertwined with the most powerful military alliance in history."
+ estonia.201.a: "Our security is guaranteed!"
+
+ EST_nato_member: "NATO Membership"
+ EST_nato_member_desc: "As a full member of NATO, Estonia benefits from collective defense guarantees under Article 5, access to advanced military training, and integration with the world's most powerful military alliance."
+ EST_nato_ally: "NATO Ally"
+ EST_nato_expansion_tension: "NATO Expansion Concerns"
+
+ # Euro Adoption 2011
+ estonia.202.t: "Estonia Adopts the Euro"
+ estonia.202.d: "On January 1st, 2011, Estonia has officially adopted the Euro as its currency, replacing the Estonian Kroon. Estonia becomes the 17th member of the Eurozone and notably the first former Soviet republic to join the common currency. After meeting all the convergence criteria despite the global financial crisis, our adoption of the Euro demonstrates Estonia's strong fiscal discipline and commitment to European integration. The changeover has been smooth, with dual pricing in place since July 2010 to help citizens adapt."
+ estonia.202.a: "The Euro is now our currency!"
+ estonia.202.b: "We shall keep the Kroon."
+
+ EST_eurozone_member: "Eurozone Member"
+ EST_eurozone_member_desc: "As a member of the Eurozone, Estonia benefits from currency stability, lower transaction costs in trade with other Euro countries, and access to the European Central Bank's monetary policy."
+ EST_eurozone_partner: "Eurozone Partner"
+ EST_euro_rejection: "Rejected Euro Adoption"
+
+ # COVID-19 Pandemic Events
+ estonia.210.t: "First COVID-19 Case Confirmed"
+ estonia.210.d: "The Health Board has confirmed Estonia's first case of COVID-19. A 44-year-old Estonian citizen who returned from Iran via Turkey on February 25th has tested positive for the novel coronavirus. The patient is currently in isolation at the West Tallinn Central Hospital. Health authorities are tracing contacts and monitoring the situation closely. The World Health Organization has already declared the outbreak a Public Health Emergency of International Concern, and we must now prepare for potential community spread."
+ estonia.210.a: "We must prepare for what's to come."
+
+ estonia.211.t: "State of Emergency Declared"
+ estonia.211.d: "The Estonian government has declared a state of emergency effective immediately. With COVID-19 cases rising across Europe and in Estonia, Prime Minister Juri Ratas has announced sweeping measures to combat the pandemic. Schools will close, public gatherings are banned, and citizens are urged to stay home. The borders are being tightened, with restrictions on travel. This is the first state of emergency in Estonia since we regained independence. The economy will suffer, but protecting lives must come first."
+ estonia.211.a: "Implement strict lockdown measures."
+ estonia.211.b: "Implement moderate restrictions only."
+
+ estonia.212.t: "COVID-19 Vaccination Campaign Begins"
+ estonia.212.d: "After months of lockdowns and restrictions, hope arrives in the form of COVID-19 vaccines. Estonia has secured vaccine supplies through the EU's joint procurement program, and the first doses are now being administered to healthcare workers and the elderly. The government must now decide how aggressively to pursue the vaccination campaign. An aggressive rollout will be more expensive but could bring faster recovery, while a standard approach conserves resources but extends the pandemic's impact."
+ estonia.212.a: "Launch an aggressive vaccination campaign."
+ estonia.212.b: "Proceed with a standard rollout."
+
+ estonia.213.t: "Estonia Reopens - COVID Recovery"
+ estonia.213.d: "After more than a year of restrictions, lockdowns, and uncertainty, Estonia is finally reopening. Vaccination rates have reached sufficient levels to allow a return to normalcy. Restrictions are being lifted, businesses are reopening, and people are returning to their normal lives. The pandemic has left its mark on our economy and society, but Estonia has weathered the storm. Now begins the work of recovery and rebuilding what was lost."
+ estonia.213.a: "A new beginning for Estonia."
+
+ estonia.214.t: "COVID-19 Second Wave Hits Estonia"
+ estonia.214.d: "As autumn arrives, so does a second wave of COVID-19 infections. Case numbers are rising rapidly, hospitals are filling up again, and the government faces difficult choices. Do we reimpose strict measures and risk further economic damage, or do we try to weather this wave with our current restrictions? The public is growing weary of pandemic measures, but the health system's capacity is being strained."
+ estonia.214.a: "Reimpose stricter measures."
+ estonia.214.b: "Maintain current restrictions."
+
+ # COVID National Spirits
+ EST_covid_lockdown: "COVID-19 Lockdown"
+ EST_covid_lockdown_desc: "Estonia is under strict lockdown measures to combat the COVID-19 pandemic. Schools are closed, businesses are shuttered, and citizens are urged to stay home. The economic and social costs are severe, but necessary to protect public health."
+
+ EST_covid_restrictions: "COVID-19 Restrictions"
+ EST_covid_restrictions_desc: "Estonia has implemented moderate restrictions to combat COVID-19. While not a full lockdown, social distancing measures, mask mandates, and gathering limits are affecting daily life and the economy."
+
+ EST_post_covid_recovery: "Post-Pandemic Recovery"
+ EST_post_covid_recovery_desc: "Estonia has emerged from the COVID-19 pandemic and is now in recovery mode. With high vaccination rates and lifted restrictions, the economy is rebounding and society is returning to normal."
