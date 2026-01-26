@@ -99,13 +99,26 @@ main
      --body "## Summary\n- Change 1\n- Change 2"
    ```
 
-4. **Wait for BugBot review:**
+4. **BugBot review loop:**
    - A GitHub Action runs BugBot to review the PR
-   - Check the Actions tab or wait for BugBot's comment on the PR
-   - If BugBot opens conversations or suggests fixes:
-     - Address each issue raised
-     - Commit fixes to the same branch
-     - Push updates and wait for re-review
+   - Check BugBot status and comments:
+     ```bash
+     gh pr checks <PR_NUMBER>
+     gh api repos/OWNER/REPO/pulls/<PR_NUMBER>/comments \
+       --jq '.[] | select(.user.login == "cursor[bot]") | {commit: .original_commit_id[0:7], title: (.body | split("\n")[0])}'
+     ```
+   - **Repeat until clean:**
+     1. Check BugBot comments for issues on latest commit
+     2. Fix all reported issues
+     3. Commit fixes:
+        ```bash
+        git add <files>
+        git commit -m "Fix BugBot issues: <description>"
+        git push
+        ```
+     4. Wait for BugBot to re-run on new commit
+     5. If new issues found, repeat from step 1
+   - PR is ready when BugBot summary shows no issues
 
 5. **Merge PR** on GitHub, then sync locally:
    ```bash
