@@ -1,6 +1,6 @@
 # TASK-010: Defense Modernization
 
-**Status: PENDING**
+**Status: DONE**
 
 ## Overview
 
@@ -24,10 +24,10 @@ Estonia lacks events for its significant defense investments and NATO integratio
 
 | File | Description | Status |
 |------|-------------|--------|
-| `events/Estonia.txt` | Add defense events | Pending |
-| `common/ideas/estonia.txt` | Add defense modifiers | Pending |
-| `common/decisions/EST_decisions.txt` | Add defense decisions | Pending |
-| `localisation/english/EST_events_l_english.yml` | Add localization | Pending |
+| `events/Estonia.txt` | Add defense events | Done |
+| `common/ideas/estonia.txt` | Add defense modifiers | Done |
+| `common/opinion_modifiers/Estonia.txt` | Add opinion modifiers | Done |
+| `localisation/english/EST_events_l_english.yml` | Add localization | Done |
 
 ## Implementation Strategy
 

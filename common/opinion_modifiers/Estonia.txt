@@ -137,4 +137,9 @@ opinion_modifiers = {
 	EST_forward_defense_partner = {
 		value = 15
 	}
+
+	# Defense Modernization (TASK-010)
+	EST_efp_partner = {
+		value = 25
+	}
 }

@@ -140,3 +140,41 @@
  EST_increase_defense_spending_4_desc: "We will further increase defense spending to 4% of GDP, making Estonia one of the highest defense spenders in NATO."
  EST_increase_defense_spending_5: "Increase Defense Spending to 5%"
  EST_increase_defense_spending_5_desc: "Estonia will become the NATO leader in defense spending at 5% of GDP, reflecting the existential threat we face."
+
+ # Defense Modernization Events (TASK-010)
+ estonia.700.t: "NATO Battlegroup Arrives in Estonia"
+ estonia.700.d: "NATO's Enhanced Forward Presence has arrived in Estonia. The UK-led multinational battlegroup, stationed at Tapa, represents NATO's strongest commitment to Baltic security since the Cold War.\n\nApproximately 1,000 troops from Britain, France, Denmark, and other allied nations will maintain a continuous presence on Estonian soil. This marks a historic moment: for the first time, allied forces are permanently stationed in Estonia.\n\nThe battlegroup serves as a deterrent tripwire, ensuring that any attack on Estonia would immediately involve multiple NATO nations."
+ estonia.700.a: "NATO stands with Estonia."
+
+ estonia.701.t: "Conscription System Reform"
+ estonia.701.d: "In response to the heightened threat environment following Russia's invasion of Ukraine, Estonia is reforming its conscription system. The proposed changes would extend the standard service period to 12 months and make conscription more universal.\n\nThis reform aims to strengthen our reserve forces and ensure that more Estonians receive military training. The goal is to maintain a trained reserve of over 60,000 that can be rapidly mobilized if needed.\n\nHowever, these changes will require significant investment and may face some public resistance."
+ estonia.701.a: "Implement full conscription reform."
+ estonia.701.b: "Take an incremental approach."
+
+ estonia.702.t: "Defense League Membership Surges"
+ estonia.702.d: "Following Russia's invasion of Ukraine, the Estonian Defense League (Kaitseliit) has experienced a dramatic surge in volunteer applications. Thousands of Estonians are signing up to join the volunteer paramilitary organization.\n\nThe Kaitseliit, with its roots in our 1918 War of Independence, forms a crucial part of our total defense concept. These volunteers receive military training and stand ready to defend Estonian territory.\n\nThis outpouring of patriotism demonstrates the Estonian people's commitment to defending their homeland."
+ estonia.702.a: "The spirit of 1918 lives on."
+
+ estonia.703.t: "Modern Air Defense Systems Acquired"
+ estonia.703.d: "Estonia has taken delivery of advanced air defense systems to protect our airspace and critical infrastructure. The IRIS-T SLM and NASAMS systems represent a major upgrade to our air defense capabilities.\n\nLessons from Ukraine have shown the critical importance of air defense against Russian cruise missiles and aircraft. These systems will provide vital protection for our cities, military bases, and key infrastructure.\n\nThis represents one of the largest military investments in Estonian history."
+ estonia.703.a: "Our skies will be defended."
+
+ estonia.704.t: "Future Capability Command Established"
+ estonia.704.d: "Estonia has established a new Future Capability Command to drive innovation in defense technology. This unit will leverage our world-class tech sector to develop cutting-edge military capabilities.\n\nFocus areas include artificial intelligence, autonomous systems, drones, and cyber capabilities. By connecting our defense forces with Estonia's thriving startup ecosystem, we aim to punch above our weight in military technology.\n\nEstonia will become a leader in defense innovation, developing solutions that can be adopted by our NATO allies."
+ estonia.704.a: "Innovation is our force multiplier."
+
+ # Defense Modernization Ideas
+ EST_nato_efp: "NATO Enhanced Forward Presence"
+ EST_nato_efp_desc: "A UK-led NATO battlegroup provides continuous military presence and training, enhancing Estonian defense capabilities."
+
+ EST_conscription_reform: "Enhanced Conscription System"
+ EST_conscription_reform_desc: "Estonia's reformed conscription system produces better-trained conscripts and strengthens the reserve force."
+
+ EST_modern_air_defense: "Modern Air Defense Network"
+ EST_modern_air_defense_desc: "Estonia has deployed IRIS-T and NASAMS air defense systems, significantly enhancing protection against aerial threats."
+
+ EST_future_capability: "Future Capability Command"
+ EST_future_capability_desc: "Estonia's defense innovation unit leverages the tech sector to develop advanced military capabilities."
+
+ # Defense Modernization Opinion Modifiers
+ EST_efp_partner: "eFP Partner"
