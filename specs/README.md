@@ -20,9 +20,9 @@ specs/
 
 | TASK ID | Topic | Description | Priority | Status |
 |---------|-------|-------------|----------|--------|
-| TASK-001 | Political Leaders | Add missing PMs and Presidents (2000-2024) | High | |
-| TASK-002 | Election Events | Create election mechanics to rotate leaders | High | |
-| TASK-003 | Alternative Leaders | Add EKRE/nationalist and Centre Party leaders for focus paths | Medium | |
+| TASK-001 | Political Leaders | Add missing PMs and Presidents (2000-2024) | High | ✅ Done |
+| TASK-002 | Election Events | Create election mechanics to rotate leaders | High | ✅ Done |
+| TASK-003 | Alternative Leaders | Add EKRE/nationalist and Centre Party leaders for focus paths | Medium | ✅ Done |
 | TASK-004 | Historical Events | Expand historical flavor events (EU, NATO, Euro, etc.) | Medium | ✅ Done |
 | TASK-005 | Current Leadership | Add Kristen Michal as current PM (2024) | High | ✅ Done |
 | TASK-006 | Cyber & Hybrid Threats | 2007 cyber attacks, GPS jamming, border incidents | High | ✅ Done |
