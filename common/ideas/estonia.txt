@@ -989,5 +989,62 @@ local_resources_chromium_factor = 0.10
 				army_defence_factor = 0.05
 			}
 		}
+
+		# Defense Modernization (TASK-010)
+
+		# NATO Enhanced Forward Presence (2017)
+		EST_nato_efp = {
+			picture = generic_military_cooperation
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				stability_factor = 0.03
+				army_org_factor = 0.05
+				planning_speed = 0.05
+			}
+		}
+
+		# Conscription Reform
+		EST_conscription_reform = {
+			picture = generic_manpower_bonus
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				conscription_factor = 0.10
+				training_time_factor = -0.10
+				army_org_factor = 0.03
+			}
+		}
+
+		# Modern Air Defense
+		EST_modern_air_defense = {
+			picture = generic_air_bonus
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				air_defence_speed_factor = 0.15
+				air_interception_agility_factor = 0.10
+				static_anti_air_damage_factor = 0.20
+			}
+		}
+
+		# Future Capability Command
+		EST_future_capability = {
+			picture = generic_research_bonus
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				research_speed_factor = 0.05
+				production_factory_efficiency_gain_factor = 0.05
+			}
+		}
 	}
 }

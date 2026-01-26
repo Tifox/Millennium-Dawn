@@ -46,7 +46,7 @@ specs/
 | TASK-007 | EKRE Political Events | EKRE rise, nationalist rhetoric, coalition dynamics | Medium | ✅ Done |
 | TASK-008 | Ukraine Response | Estonia's response to 2022 Russian invasion | High | ✅ Done |
 | TASK-009 | Digital Society | E-residency, e-governance, digital initiatives | Low | Pending |
-| TASK-010 | Defense Modernization | NATO integration, military spending, conscription | Medium | Pending |
+| TASK-010 | Defense Modernization | NATO integration, military spending, conscription | Medium | ✅ Done |
 
 ## Workflow
 
@@ -199,6 +199,10 @@ Custom GFX assets to be created after all TASKs are implemented. Currently using
 | Ukrainian refugees arriving | TASK-008 | `GFX_report_event_generic_refugees` | Pending |
 | EU sanctions meeting | TASK-008 | `GFX_report_event_generic_parliament` | Pending |
 | NATO troops in Estonia | TASK-008 | `GFX_report_event_military_parade` | Pending |
+| NATO eFP battlegroup arrival | TASK-010 | `GFX_report_event_military_parade` | Pending |
+| Military training / conscription | TASK-010 | `GFX_report_event_military_training` | Pending |
+| Air defense systems (IRIS-T/NASAMS) | TASK-010 | `GFX_report_event_anti_air` | Pending |
+| Defense innovation / tech | TASK-010 | `GFX_military_technology` | Pending |
 
 ### Idea Icons
 
@@ -207,6 +211,10 @@ Custom GFX assets to be created after all TASKs are implemented. Currently using
 | Defense spending budget | TASK-008 | `generic_military_budget` | Pending |
 | NATO Forward Forces | TASK-008 | `generic_military_cooperation` | Pending |
 | Cyber defense | TASK-006 | `generic_cyber_security` | Pending |
+| NATO eFP presence | TASK-010 | `generic_military_cooperation` | Pending |
+| Conscription reform | TASK-010 | `generic_manpower_bonus` | Pending |
+| Air defense network | TASK-010 | `generic_air_bonus` | Pending |
+| Defense innovation | TASK-010 | `generic_research_bonus` | Pending |
 
 ### Notes
 - Custom GFX can be added later without code changes - just update the `picture = ` references

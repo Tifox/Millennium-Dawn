@@ -2528,3 +2528,239 @@ country_event = {
 		ai_chance = { base = 100 }
 	}
 }
+
+###################################
+# Defense Modernization Events (TASK-010)
+###################################
+
+# 2017 - NATO Enhanced Forward Presence Arrives
+country_event = {
+	id = estonia.700
+	title = estonia.700.t
+	desc = estonia.700.d
+	picture = GFX_report_event_military_parade
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		date > 2017.4.1
+		is_in_faction = yes
+		NOT = { has_country_flag = EST_efp_arrived }
+		NOT = { has_global_flag = EST_efp_happened }
+	}
+
+	mean_time_to_happen = {
+		days = 14
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = EST_efp_happened
+		}
+	}
+
+	option = {
+		name = estonia.700.a
+		log = "[GetDateText]: [This.GetName]: event estonia.700.a executed"
+
+		set_country_flag = EST_efp_arrived
+
+		add_stability = 0.05
+		add_political_power = 25
+
+		# NATO presence
+		add_ideas = EST_nato_efp
+
+		# Improved UK relations
+		ENG = {
+			add_opinion_modifier = { target = EST modifier = EST_efp_partner }
+		}
+
+		ai_chance = { base = 100 }
+	}
+}
+
+# 2023+ - Conscription Reform
+country_event = {
+	id = estonia.701
+	title = estonia.701.t
+	desc = estonia.701.d
+	picture = GFX_report_event_military_training
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		date > 2023.1.1
+		has_country_flag = EST_ukraine_response
+		NOT = { has_country_flag = EST_conscription_reform }
+		NOT = { has_global_flag = EST_conscription_reform_happened }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = EST_conscription_reform_happened
+		}
+	}
+
+	# Option A: Full reform
+	option = {
+		name = estonia.701.a
+		log = "[GetDateText]: [This.GetName]: event estonia.701.a executed"
+
+		set_country_flag = EST_conscription_reform
+
+		add_political_power = -50
+
+		# Enhanced conscription
+		add_ideas = EST_conscription_reform
+
+		# Manpower bonus
+		add_manpower = 5000
+
+		ai_chance = { base = 80 }
+	}
+
+	# Option B: Incremental approach
+	option = {
+		name = estonia.701.b
+		log = "[GetDateText]: [This.GetName]: event estonia.701.b executed"
+
+		set_country_flag = EST_conscription_reform
+
+		add_political_power = -25
+		add_manpower = 2500
+
+		ai_chance = { base = 20 }
+	}
+}
+
+# 2022+ - Defense League Surge
+country_event = {
+	id = estonia.702
+	title = estonia.702.t
+	desc = estonia.702.d
+	picture = GFX_report_event_military_training
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		date > 2022.6.1
+		has_country_flag = EST_ukraine_response
+		NOT = { has_country_flag = EST_defense_league_surge }
+		NOT = { has_global_flag = EST_defense_league_happened }
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = EST_defense_league_happened
+		}
+	}
+
+	option = {
+		name = estonia.702.a
+		log = "[GetDateText]: [This.GetName]: event estonia.702.a executed"
+
+		set_country_flag = EST_defense_league_surge
+
+		add_stability = 0.02
+
+		# Volunteer manpower
+		add_manpower = 3000
+
+		ai_chance = { base = 100 }
+	}
+}
+
+# 2023+ - Modern Air Defense Systems
+country_event = {
+	id = estonia.703
+	title = estonia.703.t
+	desc = estonia.703.d
+	picture = GFX_report_event_anti_air
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		date > 2023.6.1
+		has_country_flag = EST_ukraine_response
+		NOT = { has_country_flag = EST_air_defense_acquired }
+		NOT = { has_global_flag = EST_air_defense_happened }
+	}
+
+	mean_time_to_happen = {
+		months = 6
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = EST_air_defense_happened
+		}
+	}
+
+	option = {
+		name = estonia.703.a
+		log = "[GetDateText]: [This.GetName]: event estonia.703.a executed"
+
+		set_country_flag = EST_air_defense_acquired
+
+		add_political_power = -75
+
+		# Modern air defense
+		add_ideas = EST_modern_air_defense
+
+		ai_chance = { base = 100 }
+	}
+}
+
+# 2025 - Future Capability Command Established
+country_event = {
+	id = estonia.704
+	title = estonia.704.t
+	desc = estonia.704.d
+	picture = GFX_military_technology
+
+	fire_only_once = yes
+
+	trigger = {
+		tag = EST
+		date > 2025.1.1
+		NOT = { has_country_flag = EST_future_capability }
+		NOT = { has_global_flag = EST_future_capability_happened }
+	}
+
+	mean_time_to_happen = {
+		months = 3
+	}
+
+	immediate = {
+		hidden_effect = {
+			set_global_flag = EST_future_capability_happened
+		}
+	}
+
+	option = {
+		name = estonia.704.a
+		log = "[GetDateText]: [This.GetName]: event estonia.704.a executed"
+
+		set_country_flag = EST_future_capability
+
+		add_political_power = 25
+
+		# Innovation command
+		add_ideas = EST_future_capability
+
+		ai_chance = { base = 100 }
+	}
+}
