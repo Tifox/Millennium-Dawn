@@ -13,7 +13,12 @@ specs/
 ├── TASK-002-election-events/              # Election mechanics
 ├── TASK-003-alternative-leaders/          # EKRE, Centre Party paths
 ├── TASK-004-historical-events/            # Missing historical events
-└── TASK-006-cyber-hybrid-events/          # Cyber attacks & hybrid warfare
+├── TASK-005-current-leadership/           # Current PM Kristen Michal
+├── TASK-006-cyber-hybrid-events/          # Cyber attacks & hybrid warfare
+├── TASK-007-ekre-events/                  # EKRE political events
+├── TASK-008-ukraine-response/             # Ukraine war response
+├── TASK-009-digital-society/              # E-governance & digital initiatives
+└── TASK-010-defense-modernization/        # Military modernization
 ```
 
 ## TASKs Overview
@@ -26,6 +31,10 @@ specs/
 | TASK-004 | Historical Events | Expand historical flavor events (EU, NATO, Euro, etc.) | Medium | ✅ Done |
 | TASK-005 | Current Leadership | Add Kristen Michal as current PM (2024) | High | ✅ Done |
 | TASK-006 | Cyber & Hybrid Threats | 2007 cyber attacks, GPS jamming, border incidents | High | ✅ Done |
+| TASK-007 | EKRE Political Events | EKRE rise, nationalist rhetoric, coalition dynamics | Medium | Pending |
+| TASK-008 | Ukraine Response | Estonia's response to 2022 Russian invasion | High | Pending |
+| TASK-009 | Digital Society | E-residency, e-governance, digital initiatives | Low | Pending |
+| TASK-010 | Defense Modernization | NATO integration, military spending, conscription | Medium | Pending |
 
 ## Workflow
 
