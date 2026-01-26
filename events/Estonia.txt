@@ -2505,6 +2505,7 @@ country_event = {
 		log = "[GetDateText]: [This.GetName]: event estonia.503.a executed"
 
 		set_country_flag = EST_nato_upgrade
+		set_global_flag = EST_efp_happened
 
 		add_stability = 0.05
 		add_political_power = 50
@@ -2552,6 +2553,8 @@ country_event = {
 		is_in_faction = yes
 		NOT = { has_country_flag = EST_efp_arrived }
 		NOT = { has_global_flag = EST_efp_happened }
+		NOT = { has_country_flag = EST_nato_upgrade }
+		NOT = { has_idea = EST_nato_forward_forces }
 	}
 
 	mean_time_to_happen = {
