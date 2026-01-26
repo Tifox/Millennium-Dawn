@@ -43,6 +43,69 @@ Each ISSUE file contains checkboxes for:
 
 Mark these as complete (`[x]`) as you work through each issue.
 
+## Git Workflow
+
+### Branch Strategy
+
+Each TASK is developed on its own branch and merged via PR:
+
+```
+main
+└── estonia-update (feature branch)
+    ├── task-001-political-leaders → PR to estonia-update
+    ├── task-002-election-events → PR to estonia-update
+    └── ...
+```
+
+### For Each TASK
+
+1. **Create branch from feature branch:**
+   ```bash
+   git checkout estonia-update
+   git checkout -b task-XXX-description
+   ```
+
+2. **Stage and commit files:**
+   ```bash
+   git add <files>
+   git commit -m "$(cat <<'EOF'
+   Add <description> (TASK-XXX)
+
+   - Change 1
+   - Change 2
+
+   Co-Authored-By: Claude Opus 4.5 <noreply@anthropic.com>
+   EOF
+   )"
+   ```
+
+3. **Push and create PR:**
+   ```bash
+   git push -u origin task-XXX-description
+   gh pr create --base estonia-update --head task-XXX-description \
+     --title "Add <description> (TASK-XXX)" \
+     --body "## Summary\n- Change 1\n- Change 2"
+   ```
+
+4. **Wait for BugBot review:**
+   - A GitHub Action runs BugBot to review the PR
+   - Check the Actions tab or wait for BugBot's comment on the PR
+   - If BugBot opens conversations or suggests fixes:
+     - Address each issue raised
+     - Commit fixes to the same branch
+     - Push updates and wait for re-review
+
+5. **Merge PR** on GitHub, then sync locally:
+   ```bash
+   git checkout estonia-update
+   git pull origin estonia-update
+   ```
+
+### Branch Naming
+
+- Use `task-XXX-description` format (e.g., `task-005-current-leadership`)
+- Do NOT use `/` in branch names when parent name exists as a branch
+
 ## Code Style
 
 All PDX script code in this spec follows the Millennium Dawn coding conventions:
