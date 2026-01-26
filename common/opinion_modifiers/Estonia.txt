@@ -17,4 +17,25 @@ opinion_modifiers = {
 	EST_suppressing_russian_language = {
 		value = -25
 	}
+
+	EST_fellow_eu_member = {
+		value = 25
+	}
+
+	EST_nato_ally = {
+		value = 30
+	}
+
+	EST_nato_expansion_tension = {
+		value = -25
+	}
+
+	# Euro Adoption
+	EST_eurozone_partner = {
+		value = 20
+	}
+
+	EST_euro_rejection = {
+		value = -30
+	}
 }

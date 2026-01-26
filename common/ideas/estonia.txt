@@ -772,5 +772,122 @@ local_resources_chromium_factor = 0.10
 				tax_gain_multiplier_modifier = 0.05
 			}
 		}
+
+		# EKRE Government Idea
+		EST_ekre_government = {
+			allowed = { original_tag = EST }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			picture = generic_nationalism
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.10
+				drift_defence_factor = 0.25
+				foreign_subversive_activites = -0.30
+			}
+		}
+
+		# Centre Party Dominance Idea
+		EST_centre_party_dominance = {
+			allowed = { original_tag = EST }
+			allowed_civil_war = { always = yes }
+			removal_cost = -1
+
+			picture = generic_pp_unity_bonus
+
+			modifier = {
+				stability_factor = 0.05
+				political_power_gain = 0.15
+				consumer_goods_factor = -0.02
+			}
+		}
+
+		# EU Membership Benefits
+		EST_eu_member_benefits = {
+			picture = generic_political_unity
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				political_power_gain = 0.05
+				stability_factor = 0.05
+				trade_opinion_factor = 0.15
+			}
+		}
+
+		# NATO Membership
+		EST_nato_member = {
+			picture = generic_military_cooperation
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				war_support_factor = 0.10
+				army_org_factor = 0.05
+				training_time_army_factor = -0.05
+			}
+		}
+
+		# Eurozone Membership
+		EST_eurozone_member = {
+			picture = generic_economic_policy
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				political_power_gain = 0.03
+				consumer_goods_factor = -0.02
+				trade_opinion_factor = 0.10
+				production_speed_buildings_factor = 0.03
+			}
+		}
+
+		# COVID-19 Pandemic Ideas
+		EST_covid_lockdown = {
+			picture = generic_disjointed_gov
+
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+
+			modifier = {
+				stability_factor = -0.15
+				consumer_goods_factor = 0.05
+				production_speed_buildings_factor = -0.10
+				political_power_gain = -0.20
+				war_support_factor = -0.10
+			}
+		}
+
+		EST_covid_restrictions = {
+			picture = generic_disjointed_gov
+
+			allowed = { always = no }
+			allowed_civil_war = { always = no }
+
+			modifier = {
+				stability_factor = -0.08
+				consumer_goods_factor = 0.02
+				production_speed_buildings_factor = -0.05
+				political_power_gain = -0.10
+			}
+		}
+
+		EST_post_covid_recovery = {
+			picture = generic_production_bonus
+
+			allowed = { always = no }
+			allowed_civil_war = { always = yes }
+
+			modifier = {
+				stability_factor = 0.05
+				production_speed_buildings_factor = 0.05
+				political_power_gain = 0.05
+			}
+		}
 	}
 }

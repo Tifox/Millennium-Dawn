@@ -1,0 +1,18 @@
+﻿l_english:
+ # Parliamentary Elections
+ est_election.1.t: "Parliamentary Elections"
+ est_election.1.d: "The citizens of Estonia head to the polls today to elect a new Riigikogu. The campaign has been hard-fought, and now the voters will decide the future direction of our nation. Which party will form the next government?"
+ est_election.1.a: "The Reform Party secures victory!"
+ est_election.1.b: "Isamaa wins the election!"
+ est_election.1.c: "The Centre Party triumphs!"
+ est_election.1.d: "EKRE achieves an upset victory!"
+
+ # Election Results News
+ est_election.10.t: "Estonian Election Results"
+ est_election.10.d: "The Estonian parliamentary elections have concluded. A new government has been formed, and the nation looks forward to the policies of the incoming administration."
+ est_election.10.a: "We wish them well."
+
+ # Snap Election
+ est_election.2.t: "Snap Election Called"
+ est_election.2.d: "Following the collapse of the government coalition, President [EST.GetLeader] has called for early parliamentary elections. The nation must return to the polls to elect a new Riigikogu and form a stable government."
+ est_election.2.a: "Prepare for the campaign."
